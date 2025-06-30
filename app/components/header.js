@@ -47,34 +47,34 @@ const Navbar = () => {
             {/* Desktop Menu - visible sur sm et plus grands écrans */}
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <a href="/" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                <a href="/" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium">Accueil</a>
 
                 {/* A propos Desktop Dropdown */}
                 <div className="relative group">
-                  <button className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                  <a href="/a-propos" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
                     A propos
                     <svg className="ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </button>
+                  </a>
                   {/* Mega Menu "A propos" */}
                   <div
                     className="absolute left-0 mt-2 w-[500px] max-w-6xl bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/4">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">K-venture</h3>
+                        <a href="/a-propos/k-venture" className="text-lg font-semibold text-gray-900 mb-10">K-venture</a>
                         <ul className="space-y-3">
-                          <li><a href="/a-propos/k-venture/histoire" className="text-gray-600 hover:text-indigo-600">Histoire</a></li>
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Missions</a></li>
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Valeurs</a></li>
+                          <li><a href="/a-propos/k-venture/histoire" className="text-gray-600 hover:text-indigo-600 text-md">Histoire</a></li>
+                          <li><a href="/a-propos/k-venture/missions" className="text-gray-600 hover:text-indigo-600 text-md">Missions</a></li>
+                          <li><a href="/a-propos/k-venture/valeurs" className="text-gray-600 hover:text-indigo-600 text-md">Valeurs</a></li>
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Sylvère Boussamba</h3>
+                        <a href="/a-propos/sylvere-boussamba" className="text-lg font-semibold text-gray-900 mb-4">Sylvère Boussamba</a>
                         <ul className="space-y-3">
-                          <li><a href="/a-propos" className="text-gray-600 hover:text-indigo-600">Parcours</a></li>
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Expertise</a></li>
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Photos et vidéos</a></li>
+                          <li><a href="/a-propos/sylvere-boussamba/parcours" className="text-gray-600 hover:text-indigo-600 text-md">Parcours</a></li>
+                          <li><a href="/a-propos/sylvere-boussamba/expertise" className="text-gray-600 hover:text-indigo-600 text-md">Expertise</a></li>
+                          <li><a href="/a-propos/sylvere-boussamba/photos&videos" className="text-gray-600 hover:text-indigo-600 text-md">Photos et vidéos</a></li>
                         </ul>
                       </div>
                     </div>
@@ -83,30 +83,30 @@ const Navbar = () => {
 
                 {/* Services Desktop Dropdown */}
                 <div className="relative group">
-                  <button className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                  <a href="/services/page" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
                     Services
                     <svg className="ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </button>
+                  </a>
                   {/* Mega Menu "Services" */}
                   <div
                     className="absolute left-0 mt-2  w-[500px] max-w-6xl bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/4">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Coaching</h3>
+                        <a href="/services/coaching/page" className="text-lg font-semibold text-gray-900 mb-2">Coaching</a>
                         <ul className="space-y-3">
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Coaching individuel</a></li>
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Coaching collectif</a></li>
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Coaching stratégique</a></li>
+                          <li><a href="/services/coaching/coaching-individuel" className="text-gray-600 hover:text-indigo-600 text-md">Coaching individuel</a></li>
+                          <li><a href="/services/coaching/coaching-collectif" className="text-gray-600 hover:text-indigo-600 text-md">Coaching collectif</a></li>
+                          <li><a href="/services/coaching/coaching-stratégique" className="text-gray-600 hover:text-indigo-600 text-md">Coaching stratégique</a></li>
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Formations</h3>
+                        <h3 className="text-lg font-semibold text-gray-900  text-md">Formations</h3>
                         <ul className="space-y-3">
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Formation des équipes</a></li>
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Développement individuel</a></li>
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Transformation organisationnelle</a></li>
+                          <li><a href="/services/formations/formation-des-equipes" className="text-gray-600 hover:text-indigo-600 text-md">Formation des équipes</a></li>
+                          <li><a href="/services/formations/developpement-individuel" className="text-gray-600 hover:text-indigo-600 text-md">Développement individuel</a></li>
+                          <li><a href="/services/formations/transformation-organisationnelle" className="text-gray-600 hover:text-indigo-600 text-md">Transformation organisationnelle</a></li>
                         </ul>
                       </div>
                     </div>
@@ -115,7 +115,7 @@ const Navbar = () => {
 
                 {/* Ressources Desktop Dropdown */}
                 <div className="relative group">
-                  <button className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                  <button className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
                     Ressources
                     <svg className="ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -126,32 +126,32 @@ const Navbar = () => {
                     className="absolute left-0 mt-2  w-[500px] max-w-6xl bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/4">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Blog</h3>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4 text-md">Blog</h3>
                         <ul className="space-y-3">
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Articles</a></li> {/* Texte mis à jour */}
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Actualités</a></li> {/* Texte mis à jour */}
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Tutoriels</a></li> {/* Texte mis à jour */}
+                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Articles</a></li> {/* Texte mis à jour */}
+                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Actualités</a></li> {/* Texte mis à jour */}
+                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Tutoriels</a></li> {/* Texte mis à jour */}
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Livres</h3>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4 text-md">Livres</h3>
                         <ul className="space-y-3">
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Nos publications</a></li> {/* Texte mis à jour */}
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Recommandations</a></li> {/* Texte mis à jour */}
+                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Nos publications</a></li> {/* Texte mis à jour */}
+                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Recommandations</a></li> {/* Texte mis à jour */}
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">E-books</h3>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4 text-md">E-books</h3>
                         <ul className="space-y-3">
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Téléchargements gratuits</a></li> {/* Texte mis à jour */}
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600">Guides thématiques</a></li> {/* Texte mis à jour */}
+                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Téléchargements gratuits</a></li> {/* Texte mis à jour */}
+                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Guides thématiques</a></li> {/* Texte mis à jour */}
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <a href="/contact" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="/contact" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium">Contact</a>
               </div>
             </div>
           </div>
@@ -182,12 +182,12 @@ const Navbar = () => {
       {/* Mobile menu content - show/hide based on menu state */}
       <div className={`sm:hidden ${isMobileMenuOpen ? '' : 'hidden'}`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a href="#" className="bg-gray-100 text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+          <a href="#" className="bg-gray-100 text-gray-900 block px-3 py-2 rounded-md text-md font-medium">Accueil</a>
 
           {/* Mobile "A propos" Dropdown */}
           <div className="relative">
             <button
-              className="w-full text-left text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
+              className="w-full text-left text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center justify-between"
               onClick={() => setIsMobileAboutDropdownOpen(!isMobileAboutDropdownOpen)}
             >
               A propos
@@ -197,7 +197,7 @@ const Navbar = () => {
             </button>
             <div className={`${isMobileAboutDropdownOpen ? 'block' : 'hidden'} px-4 py-2`}>
               <div className="border-l-2 border-indigo-500 pl-2 mb-4">
-                <h4 className="font-medium text-gray-900 mb-2">K-venture</h4>
+                <h4 className="font-medium text-gray-900 mb-2 text-md">K-venture</h4>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Histoire</a></li>
                   <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Missions</a></li>
@@ -205,7 +205,7 @@ const Navbar = () => {
                 </ul>
               </div>
               <div className="border-l-2 border-indigo-500 pl-2">
-                <h4 className="font-medium text-gray-900 mb-2">Sylvère Boussamba</h4>
+                <h4 className="font-medium text-gray-900 mb-2 text-md">Sylvère Boussamba</h4>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Parcours</a></li>
                   <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Expertise</a></li>

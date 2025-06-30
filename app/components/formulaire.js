@@ -8,8 +8,8 @@ export default function ContactForm() {
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      action="/merci" // Créez une page /merci.js ou /merci.tsx pour la redirection
-      className="w-[50%] p-8 bg-[#4CAF50] shadow-lg rounded-lg space-y-6 grid grid-cols-1 md:grid-cols-2 gap-5 dark:bg-gray-800"
+      action="/merci"
+      className="bg-[#1E5631] p-8 shadow-lg rounded-lg text-white space-y-4"
     >
       {/* Champ Honeypot pour Netlify, caché visuellement */}
       <p className="hidden">
@@ -18,96 +18,127 @@ export default function ContactForm() {
         </label>
       </p>
 
-      {/* Champ Nom Complet (première colonne sur grand écran) */}
-      <div className="mb-4">
-        <label htmlFor="fullName" className="block text-white text-sm font-bold mb-2 dark:text-gray-300">
-          Nom Complet:
-        </label>
+      {/* Titre et sous-titre du formulaire */}
+      <h2 className="text-2xl font-bold mb-2">Demande De Contact</h2>
+      <p className="text-sm text-gray-200 mb-6">Remplissez ce formulaire et nous vous recontacterons dans les plus brefs délais.</p>
+
+      {/* Conteneur de la grille 2x2 pour les champs */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Champ Prénom */}
+        <div>
+          <label htmlFor="prenom" className="block text-sm font-medium mb-1">Prénom*</label>
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            required
+            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none" 
+            placeholder="Votre prénom"
+          />
+        </div>
+
+        {/* Champ Nom */}
+        <div>
+          <label htmlFor="nom" className="block text-sm font-medium mb-1">Nom*</label>
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            required
+            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+            placeholder="Votre nom"
+          />
+        </div>
+
+        {/* Champ Email */}
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium mb-1">Email*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+            placeholder="votre.email@example.com"
+          />
+        </div>
+
+        {/* Champ Téléphone */}
+        <div>
+          <label htmlFor="telephone" className="block text-sm font-medium mb-1">Téléphone</label>
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+            placeholder="+241 XXX XXX XX XX"
+          />
+        </div>
+
+        {/* Champ Entreprise/Organisation */}
+        <div>
+          <label htmlFor="entreprise" className="block text-sm font-medium mb-1">Entreprise/Organisation</label>
+          <input
+            type="text"
+            id="entreprise"
+            name="entreprise"
+            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+          />
+        </div>
+
+        {/* Champ Service d'intérêt */}
+        <div>
+          <label htmlFor="service" className="block text-sm font-medium mb-1">Service d'intérêt</label>
+          <select
+            id="service"
+            name="service"
+            className="w-full p-2 rounded-md bg-white/8 text-white outline-none"
+          >
+            {/* Les options ont déjà bg-white et text-black */}
+            <option value="" className="bg-white text-black">Sélectionnez un service</option>
+            <option value="Coaching Individuel" className="bg-white text-black">Coaching Individuel</option>
+            <option value="Coaching Collectif" className="bg-white text-black">Coaching Collectif</option>
+            <option value="Développement Individuel" className="bg-white text-black">Développement Individuel</option>
+            <option value="Transformation Organisationnelle" className="bg-white text-black">Transformation Organisationnelle</option>
+            <option value="Formation des Équipes" className="bg-white text-black">Formation des Équipes</option>
+            <option value="Coaching Stratégique" className="bg-white text-black">Coaching Stratégique</option>
+            <option value="Autre" className="bg-white/8 text-black">Autre</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Champ Sujet */}
+      <div>
+        <label htmlFor="sujet" className="block text-sm font-medium mb-1">Sujet*</label>
         <input
           type="text"
-          id="fullName"
-          name="fullName"
+          id="sujet"
+          name="sujet"
           required
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 placeholder-gray-400"
-          placeholder="Votre nom"
+          className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
         />
       </div>
 
-      {/* Champ Email (deuxième colonne sur grand écran) */}
-      <div className="mb-4">
-        <label htmlFor="email" className="block text-white text-sm font-bold mb-2 dark:text-gray-300">
-          Email:
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 placeholder-gray-400"
-          placeholder="votre.email@example.com"
-        />
-      </div>
-
-      {/* Champ Service (première colonne sur grand écran) */}
-      <div className="mb-4">
-        <label htmlFor="service" className="block text-white text-sm font-bold mb-2 dark:text-gray-300">
-          Service qui vous intéresse:
-        </label>
-        <select
-          id="service"
-          name="service"
-          required
-          className="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200"
-        >
-          <option value="">-- Veuillez choisir un service --</option>
-          <option value="Coaching Individuel">Coaching Individuel</option>
-          <option value="Coaching Collectif">Coaching Collectif</option>
-          <option value="Développement Individuel">Développement Individuel</option>
-          <option value="Transformation Organisationnelle">Transformation Organisationnelle</option>
-          <option value="Formation des Équipes">Formation des Équipes</option>
-          <option value="Coaching Stratégique">Coaching Stratégique</option>
-        </select>
-      </div>
-       
-      {/* Champ Contact (Téléphone) (deuxième colonne sur grand écran) */}
-      <div className="mb-4">
-        <label htmlFor="contactPhone" className="block text-white text-sm font-bold mb-2 dark:text-gray-300">
-          Contact (Téléphone):
-        </label>
-        <input
-          type="tel" // Changer type en tel pour une meilleure sémantique
-          id="contactPhone"
-          name="contactPhone"
-          required
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 placeholder-gray-400"
-          placeholder="Votre Contact"
-        />
-      </div>
-
-      {/* Champ Message (prend toute la largeur) */}
-      <div className="mb-6 md:col-span-2"> {/* `col-span-2` pour qu'il prenne les deux colonnes sur écran moyen/grand */}
-        <label htmlFor="message" className="block text-white text-sm font-bold mb-2 dark:text-gray-300">
-          Votre Message:
-        </label>
+      {/* Champ Message */}
+      <div>
+        <label htmlFor="message" className="block text-sm font-medium mb-1">Message*</label>
         <textarea
           id="message"
           name="message"
           rows="5"
           required
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 placeholder-gray-400"
-          placeholder="Bonjour, je souhaite en savoir plus sur..."
+          placeholder="Décrivez vos besoins, vos objectifs et comment nous pouvons vous aider..."
+          className="w-full p-2 rounded-md bg-white/7 placeholder-gray-500 outline-none resize-y"
         ></textarea>
       </div>
 
-      {/* Bouton d'envoi (centré et prend toute la largeur) */}
-      <div className="md:col-span-2 flex justify-center"> {/* Centrage du bouton */}
-        <button
-          type="submit"
-          className="bg-[#A4DE02] hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-600 dark:hover:bg-blue-700 transition duration-300 ease-in-out"
-        >
-          Envoyer
-        </button>
-      </div>
+      {/* Bouton d'envoi */}
+      <button
+        type="submit"
+        className="w-full bg-[#A3D900] text-[#1E5631] font-bold py-3 px-6 rounded-md hover:bg-[#8CC600] transition-colors duration-300"
+      >
+        Envoyer le Message
+      </button>
     </form>
   );
 }

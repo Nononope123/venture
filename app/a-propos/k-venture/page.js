@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { Icon } from "@iconify/react";
 import { Eye } from "lucide-react";
-
+import Valeurs from "./valeurs/page"
 
 function AnimatedCounter({ from, to, duration = 2, delay = 0 }) {
   const nodeRef = useRef(null);
@@ -64,7 +64,7 @@ export default function Histoire() {
 
   return (
     <>
-      <div className="relative w-full min-[200px] flex items-center justify-center overflow-hidden bg-gray-200">
+      <div className="relative w-full h-min-[200px] flex items-center justify-center overflow-hidden bg-gray-200">
         <div
           className="absolute inset-0 bg-cover bg-center filter brightness-50"
           style={{ backgroundImage: "url('/bgv.jpg')" }}
@@ -85,12 +85,11 @@ export default function Histoire() {
               variants={textVariants}
             >
               K-Venture est un cabinet de coaching et de conseil dirigé par Sylvère Boussamba, certifié John C.
-              Maxwell, qui accompagne les dirigeants et les équipes dans l’atteinte d’une performance optimale et
-              durable.
+              Maxwell.
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row justify-center gap-4 mb-24"
+              className="flex flex-col sm:flex-row justify-center gap-4 mb-34"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -136,7 +135,7 @@ export default function Histoire() {
             ].map((stat, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col bg-[#4CAF50] p-6 rounded-lg text-white"
+                className="flex flex-col bg-[#4CAF50] p-6 rounded-lg text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer"
                 variants={cardVariants}
                 custom={index}
               >
@@ -162,24 +161,21 @@ export default function Histoire() {
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nos Missions</h2>
-              <p className="text-lg leading-8 text-gray-600 opacity-90">
-                  Accompagner les dirigeants et les équipes dans l’atteinte d’une performance optimale et durable.
-              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-              <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg">
+              <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer">
                 <div className="flex items-center gap-4">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#4CAF50] text-white">
                     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.5-.5 1.39-.5 1.89.5L21.75 12M4.5 9.75v10.125c0 .857.714 1.563 1.5 1.563h13.5c.786 0 1.5-.706 1.5-1.563V9.75M4.5 9.75c0-.242.17-.482.485-.687l4.5-4.5c.5-.5 1.25-.5 1.75 0l4.5 4.5c.315.205.485.445.485.687" />
                     </svg>
                   </div>
-                  {/* <h3 className="text-lg font-semibold text-gray-900">Performance Optimale et Durable</h3> */}
+                  <h3 className="text-lg font-semibold text-gray-900">Performance Optimale et Durable</h3>
                 </div>
                 <p className="mt-2 text-base text-gray-700">Accompagner les dirigeants et les équipes dans l’atteinte d’une performance optimale et durable.</p>
               </div>
 
-              <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg">
+              <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer">
                 <div className="flex items-center gap-4">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#4CAF50] text-white">
                     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -191,7 +187,7 @@ export default function Histoire() {
               <p className="mt-2 text-base text-gray-700">Faire émerger des leaders transformationnels, capables de guider leurs équipes et leurs entreprises vers plus de cohérence, de performance et de croissance durable.</p>
             </div>
 
-            <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg">
+            <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer">
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#4CAF50] text-white">
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -203,7 +199,7 @@ export default function Histoire() {
               <p className="mt-2 text-base text-gray-700">Former et accompagner les employés, cadres et dirigeants à travers des programmes de montée en compétences, de leadership et de coaching exécutif.</p>
             </div>
 
-            <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg">
+            <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer">
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#4CAF50] text-white">
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -217,8 +213,8 @@ export default function Histoire() {
           </div>
         </div>
       </div>
-    </div>
-
+      <Valeurs/>
+      </div>
     </>
   );
 }

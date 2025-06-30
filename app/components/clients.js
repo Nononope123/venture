@@ -1,10 +1,10 @@
+// Votre fichier Clients.jsx
 "use client";
 
 import React from "react";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"; // Assurez-vous que ce chemin est correct
-import Image from "next/image"; // Pas strictement nécessaire ici si Image n'est pas utilisé directement
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import Image from "next/image";
 
-// L'import d'image statique de Next.js
 import AfgbankImage from "@/public/afgbank.png";
 import UnescoImage from "@/public/unesco.png";
 import SEEGImage from "@/public/SEEG_logo.jpg";
@@ -13,27 +13,25 @@ import TrianonImage from "@/public/trianonblanc.png";
 import banquemondialeImage from "@/public/banquemondiale.png";
 import OrabankImage from "@/public/orabank2.jpeg";
 
-// Assurez-vous que le chemin est correct
-
 export function Clients() {
   const testimonials = [
     {
-      name: "Afgbank", 
+      name: "AFG BANK",
       title: "Bank",
       image: AfgbankImage,
     },
     {
-      name: "Banque mondiale",
+      name: "BANQUE MONDIALE",
       title: "Tech Firm",
       image: banquemondialeImage
     },
     {
-      name: "Unesco",
+      name: "UNESCO",
       title: "Retail",
       image: UnescoImage,
     },
     {
-        name: "Orabank",
+        name: "ORABANK",
         title: "Services",
         image: OrabankImage,
 
@@ -49,19 +47,21 @@ export function Clients() {
         image: TrianonImage,
     },
     {
-        name: "Union Européenne",
+        name: "UNION EUROPÉENNE",
         title: "Consulting",
         image: UE1Image,
     },
-
   ];
 
   return (
     <div
-      className="h-[30rem] rounded-md flex flex-col antialiased bg-[#4CAF50] items-center justify-center relative overflow-hidden">
-    <h3 className="text-4xl font-bold text-white mb-10">Ils nous ont fait confiance</h3>
-      <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
+      className="h-[25rem] rounded-md flex flex-col antialiased bg-[#1E5631] items-center justify-start relative overflow-hidden">
+      <h3 className="text-4xl font-bold text-white mb-10 flex justify-center">Ils nous ont fait confiance</h3>
+      <InfiniteMovingCards
+        items={testimonials}
+        direction="right"
+        speed="slow"
+      />
     </div>
   );
 }
-

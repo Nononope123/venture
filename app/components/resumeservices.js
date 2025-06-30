@@ -32,6 +32,7 @@ export function ResumeServices() {
 
   return (
     <>
+    <h3 className="flex justify-center text-4xl font-bold text-[#1E5631] py-8 ">Nos services</h3>
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -68,7 +69,7 @@ export function ResumeServices() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white  dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <img
@@ -144,7 +145,7 @@ export function ResumeServices() {
               <div className="flex justify-center items-center flex-col w-full text-center">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-bold text-neutral-800 dark:text-neutral-200 text-base"
+                  className="font-bold text-[#1E5631] dark:text-neutral-200 text-base"
                 >
                   {card.title}
                 </motion.h3>
