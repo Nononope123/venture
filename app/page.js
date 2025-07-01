@@ -9,6 +9,9 @@ import Parcours from "./components/parcours"
 import Coaching from "./components/coaching"
 import Formation from "./components/formation"
 import Newsletter from "./components/newsletter"
+import Articles from "./components/articles"
+import Livres from "./components/livres"
+import Ebook from "./components/ebook"
 
 
 
@@ -25,6 +28,9 @@ function page() {
       <Formation/>
       <Newsletter/>
       <Biographie/>
+      <Articles/>
+      <Livres/>
+      <Ebook/>
     </div>
   )
 }

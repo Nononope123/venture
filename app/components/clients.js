@@ -55,7 +55,7 @@ export function Clients() {
 
   return (
     <div
-      className="h-[25rem] rounded-md flex flex-col antialiased bg-[#1E5631] items-center justify-start relative overflow-hidden">
+      className="h-[25rem] rounded-md flex flex-col antialiased bg-[#1E5631] items-start justify-start relative overflow-hidden">
       <h3 className="text-4xl font-bold text-white mb-10 flex justify-center">Ils nous ont fait confiance</h3>
       <InfiniteMovingCards
         items={testimonials}

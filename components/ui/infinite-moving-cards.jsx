@@ -93,7 +93,7 @@ export const InfiniteMovingCards = ({
                 />
               )}
 
-              <div className="relative z-20 flex flex-col justify-center">
+              <div className="relative z-20 flex flex-col justify-start">
                   <span
                       className="text-lg leading-[1.6] font-semibold text-neutral-800 dark:text-gray-100"
                   >
