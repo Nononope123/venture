@@ -156,8 +156,11 @@ export default function Histoire() {
         </div>
       </div>
 
-      <div className="relative bg-white py-20 sm:py-24 mt-[-6.25rem] z-40">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-[6.25rem]">
+      <Valeurs/>
+
+
+      <div className="relative bg-white py-10 sm:py-24 z-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nos Missions</h2>
@@ -213,7 +216,6 @@ export default function Histoire() {
           </div>
         </div>
       </div>
-      <Valeurs/>
       </div>
     </>
   );

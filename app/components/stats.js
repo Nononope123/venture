@@ -48,7 +48,7 @@ function AnimatedCounter({ from, to, duration = 2, delay = 0 }) {
   return <span ref={nodeRef}>{from}</span>;
 }
 
-export default function HeroSectionWithStats() {
+export default function Stats() {
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -60,58 +60,12 @@ export default function HeroSectionWithStats() {
   };
 
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Image d'arrière-plan */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center filter brightness-50" // brightness-50 pour assombrir l'image
-        style={{ backgroundImage: "url('/votre-image-hero.jpg')" }} // Remplacez par le chemin de votre image
-      ></div>
-      <div className="absolute inset-0 bg-black opacity-30"></div> {/* Calque sombre supplémentaire pour le contraste */}
+    <div className="relative w-full h-100 flex items-center justify-center overflow-hidden bg-[#388E3C] ">
 
-      {/* Contenu principal de la section Hero */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center text-white py-20 sm:py-32">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
-            Votre Titre de Hero Impactant Ici
-          </h1>
-          
-          <motion.p
-            className="text-xl sm:text-2xl leading-8 mb-12"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={textVariants}
-          >
-            K-Venture est un cabinet de coaching et de conseil dirigé par Sylvère Boussamba, certifié John C.
-            Maxwell, qui accompagne les dirigeants et les équipes dans l’atteinte d’une performance optimale et
-            durable.
-          </motion.p>
-
-          {/* Section des boutons */}
-          <motion.div
-            className="flex flex-col sm:flex-row justify-center gap-4 mb-24" // Ajustement de la marge inférieure
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <a
-              href="mailto:info@ecmac-gabon.org"
-              className="px-6 py-3 flex justify-center items-center gap-2 text-[#419b60] bg-white hover:bg-white/90 rounded-md shadow-lg transition-colors duration-300 font-semibold"
-            >
-              <Icon className="text-xl" icon="line-md:email-twotone" />
-              Nous contacter
-            </a>
-            <a
-              href="/nos-services"
-              className="px-6 flex justify-center items-center gap-2 py-3 text-white bg-[#A4DE02] hover:bg-[#8bc34a] rounded-md shadow-lg transition-colors duration-300 font-semibold"
-            >
-              <Eye className="w-4 h-4 mr-1" />
-              Voir nos services
-            </a>
-          </motion.div>
-        </div>
-      </div>
+    <div className="absolute top-20 text-white ">
+    <h3 className="text-4xl text-white font-bold mb-2 text-center">Nos réalisations</h3>
+    <p className="">Des chiffres qui témoignent de notre impact</p>
+    </div>
 
       {/* Les cartes de statistiques positionnées absolument en bas de la section hero */}
       <div className="absolute bottom-0 left-0 right-0 z-50 px-6 lg:px-8 pb-10"> {/* z-50 ici */}

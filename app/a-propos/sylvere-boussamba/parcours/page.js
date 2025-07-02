@@ -1,8 +1,16 @@
+"use client"
+
 import React from 'react'
+import Biographie from "../../../components/biographie"
+import Parcours from "../../../components/parcours"
+
 
 function page() {
   return (
-    <div>page</div>
+    <div>
+    <Biographie/>
+    <Parcours/>
+    </div>
   )
 }
 

@@ -1,9 +1,10 @@
 "use client";
 
 import React from 'react';
-import { motion } from 'framer-motion'; // Keep motion for text and button animations
-import { Icon } from "@iconify/react"; // Keep Icon for contact button
-import { Eye } from "lucide-react"; // Keep Eye for services button
+import { motion } from 'framer-motion'; 
+import { Icon } from "@iconify/react"; 
+import { Eye } from "lucide-react"; 
+
 
 export default function Hero() {
   const textVariants = {
@@ -52,7 +53,7 @@ export default function Hero() {
               </a>
               <a
                 href="/nos-services"
-                className="px-6 flex justify-center items-center gap-2 py-3 text-white bg-[#A4DE02] hover:bg-[#8bc340] rounded-md shadow-lg transition-colors duration-300 font-semibold"
+                className="px-6 flex justify-center items-center gap-2 py-3 text-white bg-[#4CAF50] hover:bg-[#1E5631] rounded-md shadow-lg transition-colors duration-300 font-semibold"
               >
                 <Eye className="w-4 h-4 mr-1" />
                 Voir nos services

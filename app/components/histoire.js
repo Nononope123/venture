@@ -1,4 +1,3 @@
-// app/a-propos/k-venture/histoire/page.js
 "use client";
 
 import React, { useEffect, useRef } from 'react';
@@ -113,49 +112,8 @@ export default function Histoire() {
             </motion.div>
           </div>
         </div>
-
-        <div className="absolute bottom-10 left-0 right-0 z-50 px-6 lg:px-8">
-          <motion.dl
-            className="mx-auto max-w-7xl grid grid-cols-1 gap-4 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={{
-                visible: {
-                    transition: {
-                        staggerChildren: 0.2
-                    }
-                }
-            }}
-          >
-            {[
-              { dt: "Années d'expérience", ddPrefix: "+ ", ddValue: 8, ddSuffix: "" },
-              { dt: "Organisations locales et internationales soutenues", ddPrefix: "+ ", ddValue: 20, ddSuffix: "" },
-              { dt: "Retours clients positifs", ddPrefix: "+", ddValue: 80, ddSuffix: "%" },
-              { dt: "Entreprises et leaders transformés", ddPrefix: "+", ddValue: 100, ddSuffix: "" },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                className="flex flex-col bg-[#4CAF50] p-6 rounded-lg text-white"
-                variants={cardVariants}
-                custom={index}
-              >
-                <dt className="text-lg font-semibold leading-6">{stat.dt}</dt>
-                <dd className="order-first text-5xl font-semibold tracking-tight mb-2">
-                  {stat.ddPrefix}
-                  <AnimatedCounter
-                    from={0}
-                    to={stat.ddValue}
-                    duration={2}
-                    delay={index * 0.2}
-                  />
-                  {stat.ddSuffix}
-                </dd>
-              </motion.div>
-            ))}
-          </motion.dl>
-        </div>
       </div>
+
 
       <div className="relative bg-white py-20 sm:py-24 mt-[-6.25rem] z-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-[6.25rem]">
@@ -217,6 +175,9 @@ export default function Histoire() {
           </div>
         </div>
       </div>
+
+
+      
     </div>
 
     </>

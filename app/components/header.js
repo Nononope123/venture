@@ -60,17 +60,16 @@ const Navbar = () => {
                   {/* Mega Menu "A propos" */}
                   <div
                     className="absolute left-0 mt-2 w-[500px] max-w-6xl bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/4">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
                       <div>
-                        <a href="/a-propos/k-venture" className="text-lg font-semibold text-gray-900 mb-10">K-venture</a>
+                        <a href="/a-propos/k-venture" className="text-lg font-semibold text-gray-900 mb-2">K-venture</a>
                         <ul className="space-y-3">
-                          <li><a href="/a-propos/k-venture/histoire" className="text-gray-600 hover:text-indigo-600 text-md">Histoire</a></li>
                           <li><a href="/a-propos/k-venture/missions" className="text-gray-600 hover:text-indigo-600 text-md">Missions</a></li>
                           <li><a href="/a-propos/k-venture/valeurs" className="text-gray-600 hover:text-indigo-600 text-md">Valeurs</a></li>
                         </ul>
                       </div>
                       <div>
-                        <a href="/a-propos/sylvere-boussamba" className="text-lg font-semibold text-gray-900 mb-4">Sylvère Boussamba</a>
+                        <a href="/a-propos/sylvere-boussamba" className="text-lg font-semibold text-gray-900 mb-2 w-70">Sylvère Boussamba</a>
                         <ul className="space-y-3">
                           <li><a href="/a-propos/sylvere-boussamba/parcours" className="text-gray-600 hover:text-indigo-600 text-md">Parcours</a></li>
                           <li><a href="/a-propos/sylvere-boussamba/expertise" className="text-gray-600 hover:text-indigo-600 text-md">Expertise</a></li>
@@ -92,17 +91,17 @@ const Navbar = () => {
                   {/* Mega Menu "Services" */}
                   <div
                     className="absolute left-0 mt-2  w-[500px] max-w-6xl bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/4">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
                       <div>
-                        <a href="/services/coaching/page" className="text-lg font-semibold text-gray-900 mb-2">Coaching</a>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">Coaching</h3>
                         <ul className="space-y-3">
                           <li><a href="/services/coaching/coaching-individuel" className="text-gray-600 hover:text-indigo-600 text-md">Coaching individuel</a></li>
                           <li><a href="/services/coaching/coaching-collectif" className="text-gray-600 hover:text-indigo-600 text-md">Coaching collectif</a></li>
-                          <li><a href="/services/coaching/coaching-stratégique" className="text-gray-600 hover:text-indigo-600 text-md">Coaching stratégique</a></li>
+                          <li><a href="/services/coaching/coaching-strategique" className="text-gray-600 hover:text-indigo-600 text-md">Coaching stratégique</a></li>
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900  text-md">Formations</h3>
+                        <h3 className="text-lg font-semibold text-gray-900 text-md mb-2">Formations</h3>
                         <ul className="space-y-3">
                           <li><a href="/services/formations/formation-des-equipes" className="text-gray-600 hover:text-indigo-600 text-md">Formation des équipes</a></li>
                           <li><a href="/services/formations/developpement-individuel" className="text-gray-600 hover:text-indigo-600 text-md">Développement individuel</a></li>
@@ -128,23 +127,22 @@ const Navbar = () => {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900 mb-4 text-md">Blog</h3>
                         <ul className="space-y-3">
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Articles</a></li> {/* Texte mis à jour */}
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Actualités</a></li> {/* Texte mis à jour */}
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Tutoriels</a></li> {/* Texte mis à jour */}
+                          <li><a href="/ressources/blog/articles" className="text-gray-600 hover:text-indigo-600 text-md">Articles</a></li> 
+                          <li><a href="/ressources/blog/actualites" className="text-gray-600 hover:text-indigo-600 text-md">Actualités</a></li> 
                         </ul>
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900 mb-4 text-md">Livres</h3>
                         <ul className="space-y-3">
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Nos publications</a></li> {/* Texte mis à jour */}
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Recommandations</a></li> {/* Texte mis à jour */}
+                          <li><a href="/ressources/livres/nos-publications" className="text-gray-600 hover:text-indigo-600 text-md">Nos publications</a></li> 
+                          <li><a href="/ressources/livres/nos-recommendations" className="text-gray-600 hover:text-indigo-600 text-md">Recommandations</a></li> 
                         </ul>
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900 mb-4 text-md">E-books</h3>
                         <ul className="space-y-3">
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Téléchargements gratuits</a></li> {/* Texte mis à jour */}
-                          <li><a href="#" className="text-gray-600 hover:text-indigo-600 text-md">Guides thématiques</a></li> {/* Texte mis à jour */}
+                          <li><a href="/ressources/e-books/telechargements-gratuits" className="text-gray-600 hover:text-indigo-600 text-md">Téléchargements gratuits</a></li> 
+                          <li><a href="/ressources/e-books/guides-thematiques" className="text-gray-600 hover:text-indigo-600 text-md">Guides thématiques</a></li> 
                         </ul>
                       </div>
                     </div>
@@ -199,17 +197,16 @@ const Navbar = () => {
               <div className="border-l-2 border-indigo-500 pl-2 mb-4">
                 <h4 className="font-medium text-gray-900 mb-2 text-md">K-venture</h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Histoire</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Missions</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Valeurs</a></li>
+                  <li><a href="/a-propos/k-venture/missions" className="text-gray-600 hover:text-indigo-600 block">Missions</a></li>
+                  <li><a href="/a-propos/k-venture/valeurs" className="text-gray-600 hover:text-indigo-600 block">Valeurs</a></li>
                 </ul>
               </div>
               <div className="border-l-2 border-indigo-500 pl-2">
-                <h4 className="font-medium text-gray-900 mb-2 text-md">Sylvère Boussamba</h4>
+                <h4 className="font-medium text-gray-900 mb-2 text-md ">Sylvère Boussamba</h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Parcours</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Expertise</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Photos et vidéos</a></li>
+                  <li><a href="/a-propos/sylvere-boussamba/parcours" className="text-gray-600 hover:text-indigo-600 block">Parcours</a></li>
+                  <li><a href="/a-propos/sylvere-boussamba/expertise" className="text-gray-600 hover:text-indigo-600 block">Expertise</a></li>
+                  <li><a href="/a-propos/sylvere-boussamba/photos&videos" className="text-gray-600 hover:text-indigo-600 block">Photos et vidéos</a></li>
                 </ul>
               </div>
             </div>
@@ -230,17 +227,17 @@ const Navbar = () => {
               <div className="border-l-2 border-indigo-500 pl-2 mb-4">
                 <h4 className="font-medium text-gray-900 mb-2">Coaching</h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Coaching individuel</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Coaching collectif</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Coaching stratégique</a></li>
+                  <li><a href="/services/coaching/coaching-individuel" className="text-gray-600 hover:text-indigo-600 block">Coaching individuel</a></li>
+                  <li><a href="/services/coaching/coaching-collectif" className="text-gray-600 hover:text-indigo-600 block">Coaching collectif</a></li>
+                  <li><a href="/services/coaching/coaching-strategique" className="text-gray-600 hover:text-indigo-600 block">Coaching stratégique</a></li>
                 </ul>
               </div>
               <div className="border-l-2 border-indigo-500 pl-2">
                 <h4 className="font-medium text-gray-900 mb-2">Formations</h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Formation des équipes</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Développement individuel</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Transformation organisationnelle</a></li>
+                  <li><a href="/services/formations/formation-des-equipes" className="text-gray-600 hover:text-indigo-600 block">Formation des équipes</a></li>
+                  <li><a href="/services/formations/developpement-individuel" className="text-gray-600 hover:text-indigo-600 block">Développement individuel</a></li>
+                  <li><a href="/services/formations/transformation-organisationnelle" className="text-gray-600 hover:text-indigo-600 block">Transformation organisationnelle</a></li>
                 </ul>
               </div>
             </div>
@@ -261,23 +258,22 @@ const Navbar = () => {
               <div className="border-l-2 border-indigo-500 pl-2 mb-4">
                 <h4 className="font-medium text-gray-900 mb-2">Blog</h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Articles</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Actualités</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Tutoriels</a></li>
+                  <li><a href="/ressources/blog/articles" className="text-gray-600 hover:text-indigo-600 block">Articles</a></li>
+                  <li><a href="/ressources/blog/actualites" className="text-gray-600 hover:text-indigo-600 block">Actualités</a></li>
                 </ul>
               </div>
               <div className="border-l-2 border-indigo-500 pl-2">
                 <h4 className="font-medium text-gray-900 mb-2">Livres</h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Nos publications</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Recommandations</a></li>
+                  <li><a href="/ressources/livres/nos-publications" className="text-gray-600 hover:text-indigo-600 block">Nos publications</a></li>
+                  <li><a href="/ressources/livres/nos-recommendations" className="text-gray-600 hover:text-indigo-600 block">Recommandations</a></li>
                 </ul>
               </div>
               <div className="border-l-2 border-indigo-500 pl-2">
                 <h4 className="font-medium text-gray-900 mb-2">E-books</h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Téléchargements gratuits</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-indigo-600 block">Guides thématiques</a></li>
+                  <li><a href="/ressources/e-book/telechargements-gratuits" className="text-gray-600 hover:text-indigo-600 block">Téléchargements gratuits</a></li>
+                  <li><a href="/ressources/e-book/guides-thematiques" className="text-gray-600 hover:text-indigo-600 block">Guides thématiques</a></li>
                 </ul>
               </div>
             </div>

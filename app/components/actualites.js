@@ -1,5 +1,5 @@
 // app/actualites/page.js
-import EventCard from '@/components/ui/eventcard'; // Ajustez le chemin si nécessaire
+import EventCard from '../../components/ui/eventcard'; // Ajustez le chemin si nécessaire
 
 // Metadata pour la page Actualités (App Router)
 export const metadata = {
