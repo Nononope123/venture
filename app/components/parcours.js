@@ -18,9 +18,14 @@ export function Parcours() {
       description: "Lancement du programme de formation aux métiers du numérique",
     },
     {
-      year: "aujourd'hui",
+      year: "2020",
+      title: "École 241 business",
+      description: "Lancement du programme de formation aux métiers du numérique",
+    },
+    {
+      year: "2021",
       title: "Start X 241",
-      description: "Programme panafricain visant 200M+ d'habitants en Afrique centrale",
+      description: "Programme panafricain d'accelération de start-up technologiques.",
     },
   ];
 
