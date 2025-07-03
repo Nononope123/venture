@@ -16,28 +16,24 @@ const clientReviews = [
     clientName: "Jean Dupont",
     clientTitle: "CEO, InnovTech Solutions",
     rating: 5,
-    avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
   },
   {
     reviewText: "Grâce au coaching de Sylvère Boussamba, j'ai débloqué un potentiel que je ne soupçonnais pas. Une expérience de croissance incroyable.",
     clientName: "Marie Leblanc",
     clientTitle: "Directrice Marketing, Alpha Corp",
     rating: 5,
-    avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
   },
   {
     reviewText: "Les ateliers sur l'intelligence émotionnelle ont eu un impact profond sur la cohésion de mon équipe. Bravo K-Venture !",
     clientName: "Marc Olivier",
     clientTitle: "Chef de Projet, BuildFast Inc.",
     rating: 5,
-    avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
   },
   {
     reviewText: "Leur vision du leadership est inspirante et applicable. Nous avons vu des améliorations significatives en peu de temps.",
     clientName: "David Nkogo",
     clientTitle: "Directeur Opérations, Apex Group",
     rating: 5,
-    avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
   },
 ];
 
@@ -62,15 +58,6 @@ const ReviewCard = ({ review }) => {
         "{review.reviewText}"
       </p>
       <div className="flex items-center justify-center mt-auto pt-4 border-t border-gray-100 dark:border-zinc-700 w-full">
-        {review.avatar && (
-          <Image
-            src={review.avatar}
-            alt={review.clientName || "Client Avatar"}
-            width={50}
-            height={50}
-            className="rounded-full object-cover mr-3 border-2 border-blue-500"
-          />
-        )}
         <div className="text-left">
           <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
             {review.clientName}

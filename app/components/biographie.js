@@ -19,13 +19,13 @@ export function Biographie() {
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Fort de deux décennies d'expérience en informatique dans le secteur privé et d'une
-            décennie dans l'entrepreneuriat innovant, il accompagne les dirigeants et organisations vers
-            l'excellence depuis plus de 10 ans.
+            Fort de deux décennies d&apos;expérience en informatique dans le secteur privé et d'une
+            décennie dans l&apos;entrepreneuriat innovant, il accompagne les dirigeants et organisations vers
+            l&apos;excellence depuis plus de 10 ans.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Mentor d'affaires de la fondation Tony Elumelu depuis 2015, il a accompagné des
+            Mentor d&apos;affaires de la fondation Tony Elumelu depuis 2015, il a accompagné des
             institutions prestigieuses comme l'UNESCO, la Banque Mondiale, l'Union Européenne, ainsi
             que des entreprises leaders comme Orabank, AFG Bank, et SEEG.
           </p>
@@ -45,7 +45,6 @@ export function Biographie() {
         <div className="md:w-1/2 flex items-center justify-center p-8 bg-[#E6F3E6]">
           <video controls className="w-full h-150 max-w-[400px] object-cover rounded-lg shadow-md" preload="auto" poster="">
             <source src="/video1.mp4" type="video/mp4" />
-            Votre navigateur ne supporte pas la vidéo.
           </video>
         </div>
       </div>
