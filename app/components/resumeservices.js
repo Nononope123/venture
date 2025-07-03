@@ -72,7 +72,7 @@ export function ResumeServices() {
               className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white  dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
-                <img
+                <Image
                   width={200}
                   height={200}
                   src={active.src}
@@ -200,7 +200,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Ce service est dédié à l'accompagnement personnalisé, permettant à chaque individu de maximiser son potentiel et d'atteindre ses objectifs professionnels ou personnels.
+          Ce service est dédié à l&apos;accompagnement personnalisé, permettant à chaque individu de maximiser son potentiel et d&apos;atteindre ses objectifs professionnels ou personnels.
            Il offre un espace de réflexion confidentiel pour surmonter les défis, développer de nouvelles compétences et renforcer la confiance en soi.
         </p>
       );
@@ -214,8 +214,8 @@ const cards = [
     content: () => {
       return (
         <p>
-        Ce service se concentre sur l'épanouissement personnel et professionnel à travers l'acquisition de connaissances et le renforcement de compétences spécifiques.
-        Il inclut souvent des ateliers, des formations et des outils pour favoriser la croissance continue et l'adaptabilité.        </p>
+        Ce service se concentre sur l&apos;épanouissement personnel et professionnel à travers l&apos;acquisition de connaissances et le renforcement de compétences spécifiques.
+        Il inclut souvent des ateliers, des formations et des outils pour favoriser la croissance continue et l&apos;adaptabilité.        </p>
       );
     },
   },
@@ -242,7 +242,7 @@ const cards = [
     content: () => {
       return (
         <p>
-        Ce service accompagne les entreprises dans leurs changements majeurs, qu'ils soient technologiques, structurels ou culturels.
+        Ce service accompagne les entreprises dans leurs changements majeurs, qu&apos;ils soient technologiques, structurels ou culturels.
          Il aide à définir une vision claire, à mobiliser les équipes et à mettre en œuvre des stratégies efficaces pour une transition réussie et durable.
                  </p>
       );
@@ -256,8 +256,8 @@ const cards = [
     content: () => {
       return (
         <p>
-        Ce service s'adresse aux dirigeants et aux décideurs qui souhaitent affiner leur vision, élaborer des stratégies innovantes et piloter leur organisation vers le succès à long terme. 
-        Il offre un soutien expert pour l'analyse des défis, l'identification des opportunités et la prise de décisions éclairées.
+        Ce service s&apos;adresse aux dirigeants et aux décideurs qui souhaitent affiner leur vision, élaborer des stratégies innovantes et piloter leur organisation vers le succès à long terme. 
+        Il offre un soutien expert pour l&apos;analyse des défis, l&apos;identification des opportunités et la prise de décisions éclairées.
                 </p>
       );
     },

@@ -4,6 +4,8 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { Icon } from "@iconify/react";
 import { Eye } from "lucide-react";
+import Link from "next/link"
+
 
 
 function AnimatedCounter({ from, to, duration = 2, delay = 0 }) {

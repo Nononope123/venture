@@ -48,7 +48,7 @@ function Newsletter() {
                                 transition duration-150 ease-in-out"
                                 type="submit"
                             >
-                                S'abonner
+                                S&apos;abonner
                             </button>
                         </div>
                     </form>

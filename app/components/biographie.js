@@ -28,7 +28,7 @@ export function Biographie() {
 
           <p className="text-gray-700 leading-relaxed mb-4">
             Mentor d&apos;affaires de la fondation Tony Elumelu depuis 2015, il a accompagné des
-            institutions prestigieuses comme l'UNESCO, la Banque Mondiale, l'Union Européenne, ainsi
+            institutions prestigieuses comme l&apos;UNESCO, la Banque Mondiale, l&apos;Union Européenne, ainsi
             que des entreprises leaders comme Orabank, AFG Bank, et SEEG.
           </p>
 
