@@ -33,7 +33,7 @@ const cardVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "spring", // Use a spring animation for a natural feel
+      type: "spring", 
       stiffness: 100,
       damping: 10,
     },

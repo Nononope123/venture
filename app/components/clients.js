@@ -6,9 +6,9 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 
 import AfgbankImage from "@/public/afgbank.png";
-import UnescoImage from "@/public/unesco.png";
+import UnescoImage from "@/public/unesco1.png";
 import SEEGImage from "@/public/SEEG_logo.jpg";
-import UE1Image from "@/public/UE1.png";
+import UE1Image from "@/public/UE1.avif";
 import TrianonImage from "@/public/trianonblanc.png";
 import banquemondialeImage from "@/public/banquemondiale.png";
 import OrabankImage from "@/public/orabank2.jpeg";
@@ -16,52 +16,40 @@ import OrabankImage from "@/public/orabank2.jpeg";
 export function Clients() {
   const testimonials = [
     {
-      name: "AFG BANK",
-      title: "Bank",
       image: AfgbankImage,
     },
     {
-      name: "BANQUE MONDIALE",
-      title: "Tech Firm",
       image: banquemondialeImage
     },
     {
-      name: "UNESCO",
-      title: "Retail",
       image: UnescoImage,
     },
     {
-        name: "ORABANK",
-        title: "Services",
         image: OrabankImage,
 
     },
     {
-        name: "SEEG",
-        title: "Consulting",
         image: SEEGImage,
     },
     {
-        name: "TRIANON",
-        title: "Consulting",
         image: TrianonImage,
     },
     {
-        name: "UNION EUROPÉENNE",
-        title: "Consulting",
         image: UE1Image,
     },
   ];
 
   return (
     <div
-      className="h-[25rem] rounded-md flex flex-col antialiased bg-[#1E5631] items-start justify-start relative overflow-hidden">
-      <h3 className="text-4xl font-bold text-white mb-10 flex justify-center">Ils nous ont fait confiance</h3>
+      className="h-[20rem] rounded-md flex flex-col antialiased">
+      <h3 className="text-4xl font-bold mb-10 flex justify-center mt-10 text-[#2E7D32]">Ils nous ont fait confiance</h3>
+      <div className="items-start justify-start relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
         speed="slow"
       />
+      </div>
     </div>
   );
 }
