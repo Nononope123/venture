@@ -36,20 +36,20 @@ export default function Message() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <a
+              <Link
                 href="mailto:info@ecmac-gabon.org"
                 className="px-6 py-3 flex justify-center items-center gap-2 text-[#419b60] bg-white hover:bg-white/80 rounded-md shadow-lg transition-colors duration-300 font-semibold"
               >
                 <Icon className="text-xl" icon="line-md:email-twotone" />
                 Nous contacter
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/nos-services"
                 className="px-6 flex justify-center items-center gap-2 py-3 text-white bg-[#A4DE02] hover:bg-[#8bc340] rounded-md shadow-lg transition-colors duration-300 font-semibold"
               >
                 <Eye className="w-4 h-4 mr-1" />
                 Voir nos services
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>

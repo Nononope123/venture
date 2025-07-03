@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from "next/link"
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,30 +40,30 @@ const Navbar = () => {
           {/* Desktop Menu - visible sur sm et plus grands écrans */}
           <div className="hidden sm:block sm:ml-6">
             <div className="flex space-x-4 text-[#2E7D32] ">
-              <a href="/" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium">Accueil</a>
+              <Link href="/" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium">Accueil</Link>
 
               {/* A propos Desktop Dropdown */}
               <div className="relative group">
-                <a href="/a-propos" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
+                <Link href="/a-propos" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
                   A propos
-                </a>
+                </Link>
               </div>
 
               {/* Services Desktop Dropdown */}
               <div className="relative group">
-                <a href="/services" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
+                <Link href="/services" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
                   Services
-                </a>
+                </Link>
               </div>
 
               {/* Ressources Desktop Dropdown */}
               <div className="relative group">
-                <a href="/ressources" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
+                <Link href="/ressources" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
                   Ressources
-                </a>
+                </Link>
               </div>
 
-              <a href="/contact" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium">Contact</a>
+              <Link href="/contact" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium">Contact</Link>
             </div>
           </div>
 
@@ -92,39 +93,39 @@ const Navbar = () => {
       {/* Mobile menu content - show/hide based on menu state */}
       <div className={`sm:hidden ${isMobileMenuOpen ? '' : 'hidden'}`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a href="#" className="bg-gray-100 text-gray-900 block px-3 py-2 rounded-md text-md font-medium">Accueil</a>
+          <Link href="/" className="bg-gray-100 text-gray-900 block px-3 py-2 rounded-md text-md font-medium">Accueil</Link>
 
           {/* Mobile "A propos" Dropdown */}
           <div className="relative">
-            <a href="/a-propos"
+            <Link href="/a-propos"
               className="w-full text-left text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center justify-between"
               onClick={() => setIsMobileAboutDropdownOpen(!isMobileAboutDropdownOpen)}
             >
               A propos
-            </a>
+            </Link>
           </div>
 
           {/* Mobile "Services" Dropdown */}
           <div className="relative">
-            <a href="/services"
+            <Link href="/services"
               className="w-full text-left text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
               onClick={() => setIsMobileServicesDropdownOpen(!isMobileServicesDropdownOpen)}
             >
               Services
-            </a>
+            </Link>
           </div>
 
           {/* Mobile "Ressources" Dropdown */}
           <div className="relative">
-            <a href="/ressources"
+            <Link href="/ressources"
               className="w-full text-left text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
               onClick={() => setIsMobileRessourcesDropdownOpen(!isMobileRessourcesDropdownOpen)}
             >
               Ressources
-            </a>
+            </Link>
           </div>
 
-          <a href="/contact" className="text-gray-900 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+          <Link href="/contact" className="text-gray-900 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
 
         </div>
       </div>
