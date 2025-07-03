@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useId, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion"; // Corrected from "motion/react" to "framer-motion"
+import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import Image from "next/image"
 
@@ -123,7 +123,7 @@ export function ResumeServices() {
         ) : null}
       </AnimatePresence>
       <ul
-        className="max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-4 px-4" // Retour à la grille, 3 colonnes sur lg
+        className="max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-4 px-4"
       >
         {cards.map((card, index) => (
           <motion.div
@@ -135,11 +135,11 @@ export function ResumeServices() {
             <div className="flex gap-4 flex-col w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
-                  width={250} // Taille de l'image ajustée
+                  width={250}
                   height={200}
                   src={card.src}
                   alt={card.title}
-                  className="h-52 w-full rounded-lg object-cover object-top" // Hauteur de l'image ajustée
+                  className="h-52 w-full rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="flex justify-center items-center flex-col w-full text-center">
@@ -200,7 +200,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Ce service est dédié à l'accompagnement personnalisé, permettant à chaque individu de maximiser son potentiel et d'atteindre ses objectifs professionnels ou personnels.
+          Ce service est dédié à l&apos;accompagnement personnalisé, permettant à chaque individu de maximiser son potentiel et d&apos;atteindre ses objectifs professionnels ou personnels.
            Il offre un espace de réflexion confidentiel pour surmonter les défis, développer de nouvelles compétences et renforcer la confiance en soi.
         </p>
       );
@@ -214,8 +214,9 @@ const cards = [
     content: () => {
       return (
         <p>
-        Ce service se concentre sur l'épanouissement personnel et professionnel à travers l'acquisition de connaissances et le renforcement de compétences spécifiques.
-        Il inclut souvent des ateliers, des formations et des outils pour favoriser la croissance continue et l'adaptabilité.        </p>
+        Ce service se concentre sur l&apos;épanouissement personnel et professionnel à travers l&apos;acquisition de connaissances et le renforcement de compétences spécifiques.
+        Il inclut souvent des ateliers, des formations et des outils pour favoriser la croissance continue et l&apos;adaptabilité.
+                </p>
       );
     },
   },
@@ -242,7 +243,7 @@ const cards = [
     content: () => {
       return (
         <p>
-        Ce service accompagne les entreprises dans leurs changements majeurs, qu'ils soient technologiques, structurels ou culturels.
+        Ce service accompagne les entreprises dans leurs changements majeurs, qu&apos;ils soient technologiques, structurels ou culturels.
          Il aide à définir une vision claire, à mobiliser les équipes et à mettre en œuvre des stratégies efficaces pour une transition réussie et durable.
                  </p>
       );
@@ -256,8 +257,8 @@ const cards = [
     content: () => {
       return (
         <p>
-        Ce service s'adresse aux dirigeants et aux décideurs qui souhaitent affiner leur vision, élaborer des stratégies innovantes et piloter leur organisation vers le succès à long terme. 
-        Il offre un soutien expert pour l'analyse des défis, l'identification des opportunités et la prise de décisions éclairées.
+        Ce service s&apos;adresse aux dirigeants et aux décideurs qui souhaitent affiner leur vision, élaborer des stratégies innovantes et piloter leur organisation vers le succès à long terme. 
+        Il offre un soutien expert pour l&apos;analyse des défis, l&apos;identification des opportunités et la prise de décisions éclairées.
                 </p>
       );
     },
@@ -270,7 +271,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Axé sur la dynamique de groupe, le coaching collectif vise à optimiser la collaboration et la performance d'une équipe. 
+          Axé sur la dynamique de groupe, le coaching collectif vise à optimiser la collaboration et la performance d&apos;une équipe. 
           Il aide les membres à mieux communiquer, à résoudre les conflits et à travailler ensemble de manière plus efficace pour atteindre des objectifs communs.
         </p>
       );

@@ -65,7 +65,7 @@ export function Formation() {
             <div className="mt-auto flex justify-between items-center pt-4 border-t border-gray-100">
               <span className="text-gray-500 text-sm">{training.duration}</span>
               <button className="bg-green-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 text-sm">
-                S'inscrire
+                S&apos;inscrire
               </button>
             </div>
           </div>

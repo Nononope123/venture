@@ -28,7 +28,7 @@ export function Parcours() {
     <section className="bg-gray-100 py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-green-700 mb-2">Parcours & Initiatives Clés</h2>
-        <p className="text-gray-700 text-lg">Un parcours d'innovation et de transformation</p>
+        <p className="text-gray-700 text-lg">Un parcours d&apos;innovation et de transformation</p>
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"> {/* Ajustement de la grille pour 2 colonnes sur les grands écrans */}
@@ -41,7 +41,7 @@ export function Parcours() {
               {/* Pastille Année - Maintenant circulaire et interne */}
               <div className="bg-green-600 text-white font-bold text-sm h-15 w-15 flex items-center justify-center rounded-full shrink-0 mr-4">
                 {initiative.year === "aujourd'hui" ? (
-                  <span className="text-[10px] leading-none text-center">aujourd'<br/>hui</span> // Taille de police plus petite pour "aujourd'hui" sur deux lignes
+                  <span className="text-[10px] leading-none text-center">aujourd&apos;<br/>hui</span> // Taille de police plus petite pour "aujourd'hui" sur deux lignes
                 ) : (
                   initiative.year
                 )}

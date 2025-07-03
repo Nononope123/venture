@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 import { Eye } from "lucide-react";
 
 
@@ -84,7 +85,7 @@ export default function Histoire() {
               variants={textVariants}
             >
               K-Venture est un cabinet de coaching et de conseil dirigé par Sylvère Boussamba, certifié John C.
-              Maxwell, qui accompagne les dirigeants et les équipes dans l’atteinte d’une performance optimale et
+              Maxwell, qui accompagne les dirigeants et les équipes dans l&apos;atteinte d&apos;une performance optimale et
               durable.
             </motion.p>
 
@@ -121,7 +122,7 @@ export default function Histoire() {
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nos Missions</h2>
               <p className="text-lg leading-8 text-gray-600 opacity-90">
-                  Accompagner les dirigeants et les équipes dans l’atteinte d’une performance optimale et durable.
+                  Accompagner les dirigeants et les équipes dans l&apos;atteinte d&apos;une performance optimale et durable.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -132,9 +133,8 @@ export default function Histoire() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.5-.5 1.39-.5 1.89.5L21.75 12M4.5 9.75v10.125c0 .857.714 1.563 1.5 1.563h13.5c.786 0 1.5-.706 1.5-1.563V9.75M4.5 9.75c0-.242.17-.482.485-.687l4.5-4.5c.5-.5 1.25-.5 1.75 0l4.5 4.5c.315.205.485.445.485.687" />
                     </svg>
                   </div>
-                  {/* <h3 className="text-lg font-semibold text-gray-900">Performance Optimale et Durable</h3> */}
                 </div>
-                <p className="mt-2 text-base text-gray-700">Accompagner les dirigeants et les équipes dans l’atteinte d’une performance optimale et durable.</p>
+                <p className="mt-2 text-base text-gray-700">Accompagner les dirigeants et les équipes dans l&apos;atteinte d&apos;une performance optimale et durable.</p>
               </div>
 
               <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg">
@@ -170,7 +170,7 @@ export default function Histoire() {
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900">Transformation Organisationnelle</h3>
               </div>
-              <p className="mt-2 text-base text-gray-700">Aider les entreprises à optimiser leur structure interne, conduire le changement et renforcer la culture d’entreprise, en mettant l’accent sur le leadership transformationnel et l’intelligence collective.</p>
+              <p className="mt-2 text-base text-gray-700">Aider les entreprises à optimiser leur structure interne, conduire le changement et renforcer la culture d&apos;entreprise, en mettant l&apos;accent sur le leadership transformationnel et l&apos;intelligence collective.</p>
             </div>
           </div>
         </div>

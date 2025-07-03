@@ -84,7 +84,7 @@ export default function ContactForm() {
 
         {/* Champ Service d'intérêt */}
         <div>
-          <label htmlFor="service" className="block text-sm font-medium mb-1">Service d'intérêt</label>
+          <label htmlFor="service" className="block text-sm font-medium mb-1">Service d&apos;intérêt</label>
           <select
             id="service"
             name="service"

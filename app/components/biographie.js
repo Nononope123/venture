@@ -21,19 +21,19 @@ export function Biographie() {
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Fort de deux décennies d&apos;expérience en informatique dans le secteur privé et d'une
+            Fort de deux décennies d&apos;expérience en informatique dans le secteur privé et d&apos;une
             décennie dans l&apos;entrepreneuriat innovant, il accompagne les dirigeants et organisations vers
             l&apos;excellence depuis plus de 10 ans.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
             Mentor d&apos;affaires de la fondation Tony Elumelu depuis 2015, il a accompagné des
-            institutions prestigieuses comme l'UNESCO, la Banque Mondiale, l'Union Européenne, ainsi
+            institutions prestigieuses comme l&apos;UNESCO, la Banque Mondiale, l&apos;Union Européenne, ainsi
             que des entreprises leaders comme Orabank, AFG Bank, et SEEG.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-8">
-            Autodidacte passionné, il a commencé la programmation à 11 ans et maîtrise aujourd'hui un
+            Autodidacte passionné, il a commencé la programmation à 11 ans et maîtrise aujourd&apos;hui un
             large éventail de compétences numériques et managériales.
           </p>
 
