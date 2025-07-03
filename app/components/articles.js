@@ -1,4 +1,3 @@
-// app/page.js
 import ArticleCard from '@/components/ui/articlecard';
 
 export const metadata = {
@@ -13,7 +12,6 @@ export default function Articles() {
       title: "Les 5 Qualités Essentielles d'un Leader Transformationnel",
       description: "Découvrez les caractéristiques qui distinguent les vrais leaders et comment les développer pour transformer votre organisation.",
       tag: "Leadership",
-      readTime: 5,
       link: "/articles/leader-transformationnel",
     },
     {
@@ -21,7 +19,6 @@ export default function Articles() {
       title: "Intelligence Émotionnelle : La Clé du Leadership Moderne",
       description: "Développez votre intelligence émotionnelle pour mieux communiquer, motiver et diriger vos équipes.",
       tag: "Développement Personnel",
-      readTime: 7,
       link: "/articles/intelligence-emotionnelle",
     },
     {
@@ -29,7 +26,6 @@ export default function Articles() {
       title: "Conduire le Changement : Stratégies et Bonnes Pratiques",
       description: "Les étapes clés pour accompagner votre organisation dans les transitions et transformations importantes.",
       tag: "Transformation",
-      readTime: 6,
       link: "/articles/conduire-changement",
     },
     {
@@ -37,7 +33,6 @@ export default function Articles() {
       title: "La Communication Positive au Service du Leadership",
       description: "Techniques de communication pour créer un environnement de travail positif et mobiliser vos équipes.",
       tag: "Communication",
-      readTime: 4,
       link: "/articles/communication-positive",
     },
     {
@@ -45,7 +40,6 @@ export default function Articles() {
       title: "Développer la Confiance en Soi pour Mieux Leader",
       description: "Comment renforcer votre confiance personnelle pour exercer un leadership authentique et inspirant.",
       tag: "Développement Personnel",
-      readTime: 5,
       link: "/articles/confiance-en-soi",
     },
     {
@@ -53,7 +47,6 @@ export default function Articles() {
       title: "Les Erreurs de Leadership à Éviter Absolument",
       description: "Identifiez et évitez les pièges courants qui peuvent nuire à votre efficacité en tant que leader.",
       tag: "Leadership",
-      readTime: 6,
       link: "/articles/erreurs-leadership",
     },
   ];
@@ -73,7 +66,6 @@ export default function Articles() {
               title={article.title}
               description={article.description}
               tag={article.tag}
-              readTime={article.readTime}
               link={article.link}
             />
           ))}

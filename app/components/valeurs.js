@@ -25,19 +25,19 @@ export function Valeurs() {
         <h2 className="text-4xl font-bold text-green-700 mb-2">Nos valeurs</h2>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"> {/* Ajustement de la grille pour 2 colonnes sur les grands écrans */}
-        {valeurs.map((valeurs, index) => (
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Changed to lg:grid-cols-3 */}
+        {valeurs.map((valeur, index) => ( // Changed 'valeurs' to 'valeur' for clarity
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md p-8 flex flex-col justify-start border border-gray-200" // p-8 pour plus de padding
+            className="bg-white rounded-lg shadow-md p-8 flex flex-col justify-start border border-gray-200"
           >
-            <div className="flex items-center mb-4"> {/* Conteneur pour la pastille et le titre */}
-              <div className="bg-green-600 text-white font-bold text-sm h-15 w-15 flex items-center justify-center rounded-full shrink-0 mr-4">
-                  {valeurs.letter}
+            <div className="flex items-center mb-4">
+              <div className="bg-green-600 text-white font-bold text-lg h-12 w-12 flex items-center justify-center rounded-full shrink-0 mr-4"> {/* Adjusted size for better fit */}
+                  {valeur.letter}
               </div>
-              <h3 className="text-xl font-bold text-gray-800">{valeurs.title}</h3> {/* Titre à côté de la pastille */}
+              <h3 className="text-xl font-bold text-gray-800">{valeur.title}</h3>
             </div>
-            <p className="text-gray-600 text-sm pl-19 -mt-5">{valeurs.description}</p> {/* Description en dessous */}
+            <p className="text-gray-600 text-sm">{valeur.description}</p> {/* Removed unnecessary padding, will align naturally */}
           </div>
         ))}
       </div>

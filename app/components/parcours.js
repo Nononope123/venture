@@ -8,11 +8,6 @@ export function Parcours() {
       description: "Création de l'un des premiers incubateurs et espaces de coworking à Libreville",
     },
     {
-      year: "2015",
-      title: "Mentor Tony Elumelu",
-      description: "Devient mentor d'affaires de la fondation Tony Elumelu",
-    },
-    {
       year: "2018",
       title: "École 241",
       description: "Lancement du programme de formation aux métiers du numérique",
@@ -32,7 +27,7 @@ export function Parcours() {
   return (
     <section className="bg-gray-100 py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold text-green-700 mb-2">Parcours & Initiatives Clés</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-green-700 mb-2">Parcours & Initiatives Clés</h2>
         <p className="text-gray-700 text-lg">Un parcours d'innovation et de transformation</p>
       </div>
 

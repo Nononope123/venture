@@ -26,13 +26,6 @@ const clientReviews = [
     avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
   },
   {
-    reviewText: "Une expertise inégalée en gestion du changement. K-Venture nous a guidés avec brio à travers une période complexe.",
-    clientName: "Fatou Diallo",
-    clientTitle: "Responsable RH, Global Connect",
-    rating: 4,
-    avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
-  },
-  {
     reviewText: "Les ateliers sur l'intelligence émotionnelle ont eu un impact profond sur la cohésion de mon équipe. Bravo K-Venture !",
     clientName: "Marc Olivier",
     clientTitle: "Chef de Projet, BuildFast Inc.",
@@ -40,31 +33,10 @@ const clientReviews = [
     avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
   },
   {
-    reviewText: "Un accompagnement sur mesure qui a propulsé ma carrière. Leur approche personnalisée est un atout majeur.",
-    clientName: "Sophie Martin",
-    clientTitle: "Consultante Senior",
-    rating: 4,
-    avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
-  },
-  {
     reviewText: "Leur vision du leadership est inspirante et applicable. Nous avons vu des améliorations significatives en peu de temps.",
     clientName: "David Nkogo",
     clientTitle: "Directeur Opérations, Apex Group",
     rating: 5,
-    avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
-  },
-  {
-    reviewText: "Des formateurs passionnés et compétents. Leurs méthodes sont engageantes et les résultats durables.",
-    clientName: "Nathalie Dubois",
-    clientTitle: "Coordinatrice de Programmes, NGO Africa",
-    rating: 5,
-    avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
-  },
-  {
-    reviewText: "Un investissement qui rapporte ! Leurs conseils ont directement contribué à l'amélioration de notre productivité.",
-    clientName: "Pauline Lefevre",
-    clientTitle: "Responsable Projets, Green Solutions",
-    rating: 4,
     avatar: "/Capture d’écran du 2025-06-27 18-11-01.png"
   },
 ];

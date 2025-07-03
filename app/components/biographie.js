@@ -36,17 +36,14 @@ export function Biographie() {
           </p>
 
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-auto">
-            <button className="bg-green-700 text-white font-semibold py-2 px-6 rounded-md hover:bg-green-800 transition duration-300">
+            <a href="/contact" className="bg-green-700 text-white font-semibold py-2 px-6 rounded-md hover:bg-green-800 transition duration-300">
               Prendre Rendez-vous
-            </button>
-            <button className="border border-green-700 text-green-700 font-semibold py-2 px-6 rounded-md hover:bg-green-50 transition duration-300">
-              Voir la Vidéo de Présentation
-            </button>
+            </a>
           </div>
         </div>
 
         <div className="md:w-1/2 flex items-center justify-center p-8 bg-[#E6F3E6]">
-          <video controls className="w-full h-auto max-w-[400px] object-cover rounded-lg shadow-md" preload="auto" poster="/images/poster-video.jpg">
+          <video controls className="w-full h-150 max-w-[400px] object-cover rounded-lg shadow-md" preload="auto" poster="">
             <source src="/video1.mp4" type="video/mp4" />
             Votre navigateur ne supporte pas la vidéo.
           </video>

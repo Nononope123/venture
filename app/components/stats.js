@@ -63,12 +63,12 @@ export default function Stats() {
     <div className="relative w-full h-100 flex items-center justify-center overflow-hidden bg-[#388E3C] ">
 
     <div className="absolute top-20 text-white ">
-    <h3 className="text-4xl text-white font-bold mb-2 text-center">Nos réalisations</h3>
+    <h3 className="text-5xl text-white font-bold mb-2 text-center">Nos réalisations</h3>
     <p className="">Des chiffres qui témoignent de notre impact</p>
     </div>
 
       {/* Les cartes de statistiques positionnées absolument en bas de la section hero */}
-      <div className="absolute bottom-0 left-0 right-0 z-50 px-6 lg:px-8 pb-10"> {/* z-50 ici */}
+      <div className="absolute bottom-0 left-0 right-0  px-6 lg:px-8 pb-10"> {/* z-50 ici */}
         <motion.dl
           className="mx-auto max-w-7xl grid grid-cols-1 gap-4 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4"
           initial="hidden"

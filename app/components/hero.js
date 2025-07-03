@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative w-full h-[600px] flex items-center justify-center overflow-hidden bg-gray-200">
+      <div className="relative w-full h-[500px] flex items-center justify-center overflow-hidden bg-gray-200">
         <div
           className="absolute inset-0 bg-cover bg-center filter brightness-50"
           style={{ backgroundImage: "url('/bgv.jpg')" }}
@@ -53,7 +53,7 @@ export default function Hero() {
               </a>
               <a
                 href="/nos-services"
-                className="px-6 flex justify-center items-center gap-2 py-3 text-white bg-[#4CAF50] hover:bg-[#1E5631] rounded-md shadow-lg transition-colors duration-300 font-semibold"
+                className="px-6 flex justify-center items-center gap-2 py-3 text-white bg-[#2E7D32] hover:bg-[#1E5631] rounded-md shadow-lg transition-colors duration-300 font-semibold"
               >
                 <Eye className="w-4 h-4 mr-1" />
                 Voir nos services

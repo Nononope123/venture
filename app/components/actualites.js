@@ -1,11 +1,4 @@
-// app/actualites/page.js
-import EventCard from '../../components/ui/eventcard'; // Ajustez le chemin si nécessaire
-
-// Metadata pour la page Actualités (App Router)
-export const metadata = {
-  title: 'Actualités - Nos Masterminds et Événements',
-  description: 'Découvrez nos prochaines lectures en ligne et masterminds sur le leadership.',
-};
+import EventCard from '../../components/ui/eventcard';
 
 export default function ActualitesPage() {
   const events = [
@@ -15,11 +8,11 @@ export default function ActualitesPage() {
       description: "Partie 1: 19H-20H / GRATUIT. Partie 2: 20H-21H / UNE ENTREVUE AVEC L'AUTEUR + LIVRE.",
       date: "SAMEDI 14 JUIN 2025",
       time: "19H00",
-      price: 30000, // En FCFA
+      price: 30000,
       bookTitle: "LES DAMNÉS DE LA RENTE",
       authorName: "Gabriel NTOUGOU",
-      imageUrl: "/images/atelier1.jpg", // Chemin relatif vers votre image dans /public
-      link: "https://bit.ly/coachsylvereboussamba", // Lien réel du QR code
+      imageUrl: "/atelier1.jpg",
+      link: "https://bit.ly/coachsylvereboussamba",
     },
     {
       id: 2,
@@ -30,26 +23,25 @@ export default function ActualitesPage() {
       price: 30000,
       bookTitle: "INVESTIR AU GABON",
       authorName: "Hélène ZOUA-ONDO",
-      imageUrl: "/images/atelier2.jpg", // Chemin relatif vers votre image dans /public
-      link: "https://bit.ly/coachsylvereboussamba", // Lien réel du QR code
+      imageUrl: "/atelier2.jpg",
+      link: "https://bit.ly/coachsylvereboussamba",
     },
-    // Si vous avez plus d'événements, ajoutez-les ici
     {
       id: 3,
       title: "LECTURE EN LIGNE MASTER MIND",
       description: "Partie 1: 19H-20H / GRATUIT. Partie 2: 20H-21H / UNE ENTREVUE AVEC L'AUTEUR + LIVRE.",
-      date: "SAMEDI 14 JUIN 2025", // La même date que le premier, si c'est la même session
+      date: "SAMEDI 14 JUIN 2025",
       time: "19H00",
       price: 30000,
-      bookTitle: "POURQUOI LE GABON NE DECOLLE PAS", // Titre du livre visible sur atelier3.jpg
-      authorName: "Sylvère BOUSSAMBA", // L'auteur mentionné sur l'image si c'est bien lui
-      imageUrl: "/images/atelier3.jpg", // Chemin relatif vers votre image dans /public
-      link: "https://bit.ly/coachsylvereboussamba", // Lien réel du QR code
+      bookTitle: "POURQUOI LE GABON NE DECOLLE PAS",
+      authorName: "Sylvère BOUSSAMBA",
+      imageUrl: "/atelier3.jpg",
+      link: "https://bit.ly/coachsylvereboussamba",
     },
   ];
 
   return (
-    <div className="py-10 bg-gray-50"> {/* Ajout d'un fond clair et padding vertical */}
+    <div className="py-10 bg-gray-50">
       <div className="container mx-auto px-4">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-3">Actualités & Événements</h1>
