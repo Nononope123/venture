@@ -4,6 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion'; 
 import { Icon } from "@iconify/react"; 
 import { Eye } from "lucide-react"; 
+import Link from "next/link"
+
 
 
 export default function Hero() {
@@ -44,20 +46,20 @@ export default function Hero() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <a
+              <Link
                 href="mailto:info@ecmac-gabon.org"
                 className="px-6 py-3 flex justify-center items-center gap-2 text-[#419b60] bg-white hover:bg-white/90 rounded-md shadow-lg transition-colors duration-300 font-semibold"
               >
                 <Icon className="text-xl" icon="line-md:email-twotone" />
                 Nous contacter
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/nos-services"
                 className="px-6 flex justify-center items-center gap-2 py-3 text-white bg-[#2E7D32] hover:bg-[#1E5631] rounded-md shadow-lg transition-colors duration-300 font-semibold"
               >
                 <Eye className="w-4 h-4 mr-1" />
                 Voir nos services
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>

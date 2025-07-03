@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link"
+
 
 export function Biographie() {
   return (
@@ -36,9 +38,9 @@ export function Biographie() {
           </p>
 
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-auto">
-            <a href="/contact" className="bg-green-700 text-white font-semibold py-2 px-6 rounded-md hover:bg-green-800 transition duration-300">
+            <Link href="/contact" className="bg-green-700 text-white font-semibold py-2 px-6 rounded-md hover:bg-green-800 transition duration-300">
               Prendre Rendez-vous
-            </a>
+            </Link>
           </div>
         </div>
 

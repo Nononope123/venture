@@ -3,7 +3,7 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion"; // Corrected from "motion/react" to "framer-motion"
 import { useOutsideClick } from "@/hooks/use-outside-click";
-
+import Image from "next/image"
 
 
 export function ResumeServices() {
@@ -134,7 +134,7 @@ export function ResumeServices() {
           >
             <div className="flex gap-4 flex-col w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
-                <img
+                <Image
                   width={250} // Taille de l'image ajustée
                   height={200}
                   src={card.src}

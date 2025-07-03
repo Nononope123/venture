@@ -2,6 +2,8 @@
 
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import Link from "next/link"
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -73,13 +75,13 @@ const Footer = () => {
             </p>
             <div className="flex justify-center sm:justify-start space-x-4">
               {socialLinks.map((link, index) => (
-                <a
+                <Link
                   key={index}
                   href={link.href}
                   className="text-white hover:text-blue-400"
                 >
                   {link.icon}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -90,9 +92,9 @@ const Footer = () => {
             <ul className="space-y-2">
               {aboutLinks.map((link, index) => (
                 <li key={index}>
-                  <a href={link.href} className="hover:text-blue-400">
+                  <Link href={link.href} className="hover:text-blue-400">
                     {link.text}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -122,12 +124,12 @@ const Footer = () => {
         />
         <p className="text-white">
           Copyright &copy; {currentYear}{" "}
-          <a
+          <Link
             href=""
             className="text-blue-900 hover:underline"
           >
             Aurel NTSAME
-          </a>{" "}
+          </Link>{" "}
           . <span className="font-semibold">K-venture</span> Tous droits réservés.
         </p>
       </div>
