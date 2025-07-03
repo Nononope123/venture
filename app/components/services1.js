@@ -53,9 +53,9 @@ const Services1 = () => {
               key={index}
               className="bg-white p-6 rounded-2xl hover:p-5 hover:shadow-md  hover:border-1 hover:border-[#1E5631]"
               initial="hidden"
-              whileInView="visible" // Animates when the element comes into view
-              viewport={{ once: true, amount: 0.8 }} // Animates only once, when 80% of the element is visible
-              transition={{ delay: index * 0.1 }} // Apply staggered delay based on index
+              whileInView="visible" 
+              viewport={{ once: true, amount: 0.8 }} 
+              transition={{ delay: index * 0.1 }} 
             >
               <h3 className={`text-xl font-semibold flex justify-center ${skill.color} mb-2`}>{skill.title}</h3>
               <p className="text-gray-600 mb-6 text-center">{skill.description}</p>

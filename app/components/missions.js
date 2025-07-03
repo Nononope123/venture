@@ -17,7 +17,7 @@ export default function Missions() {
                   </svg>
                 </div>
               </div>
-              <p className="mt-2 text-base text-gray-700">Accompagner les dirigeants et les équipes dans l’atteinte d’une performance optimale et durable.</p>
+              <p className="mt-2 text-base text-gray-700">Accompagner les dirigeants et les équipes dans l&apos;atteinte d&apos;une performance optimale et durable.</p>
             </div>
 
             <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg">
@@ -50,7 +50,7 @@ export default function Missions() {
                   </svg>
                 </div>
               </div>
-              <p className="mt-2 text-base text-gray-700">Aider les entreprises à optimiser leur structure interne, conduire le changement et renforcer la culture d’entreprise, en mettant l’accent sur le leadership transformationnel et l’intelligence collective.</p>
+              <p className="mt-2 text-base text-gray-700">Aider les entreprises à optimiser leur structure interne, conduire le changement et renforcer la culture d&apos;entreprise, en mettant l&apos;accent sur le leadership transformationnel et l&apos;intelligence collective.</p>
             </div>
           </div>
         </div>

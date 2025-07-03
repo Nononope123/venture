@@ -9,7 +9,7 @@ export default function ContactForm() {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       action="/merci"
-      className="bg-[#1E5631] p-8 shadow-lg rounded-lg text-white space-y-4"
+      className="bg-[#2E7D32] p-8 shadow-lg rounded-lg text-white space-y-4"
     >
       {/* Champ Honeypot pour Netlify, caché visuellement */}
       <p className="hidden">
@@ -33,7 +33,6 @@ export default function ContactForm() {
             name="prenom"
             required
             className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none" 
-            placeholder="Votre prénom"
           />
         </div>
 
@@ -46,7 +45,6 @@ export default function ContactForm() {
             name="nom"
             required
             className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
-            placeholder="Votre nom"
           />
         </div>
 
@@ -59,7 +57,6 @@ export default function ContactForm() {
             name="email"
             required
             className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
-            placeholder="votre.email@example.com"
           />
         </div>
 
@@ -71,7 +68,6 @@ export default function ContactForm() {
             id="telephone"
             name="telephone"
             className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
-            placeholder="+241 XXX XXX XX XX"
           />
         </div>
 
@@ -127,7 +123,6 @@ export default function ContactForm() {
           name="message"
           rows="5"
           required
-          placeholder="Décrivez vos besoins, vos objectifs et comment nous pouvons vous aider..."
           className="w-full p-2 rounded-md bg-white/7 placeholder-gray-500 outline-none resize-y"
         ></textarea>
       </div>
