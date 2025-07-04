@@ -65,8 +65,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#F1F8E9] items-center">
-      <div className="container p-5 md:py-20 mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left">
+      <div className="container flex justify-center items-center px-5 md:py-20 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:text-left">
           {/* Section A propos */}
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">À propos de nous</h2>
@@ -115,7 +115,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="px-10 py-5 border-t flex flex-col md:flex-row gap-6 justify-between items-center bg-[#51be78] border-gray-700 text-center text-sm">
+      <div className="px-10 py-5 border-t flex flex-col md:flex-row gap-6 justify-between items-center bg-[#388e3c] border-gray-700 text-center text-sm">
         <Image
           src="/logo.png"
           alt="k-venture"

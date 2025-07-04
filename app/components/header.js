@@ -1,74 +1,51 @@
 "use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from "next/link"
+import { usePathname } from "next/navigation";
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileAboutDropdownOpen, setIsMobileAboutDropdownOpen] = useState(false);
-  const [isMobileServicesDropdownOpen, setIsMobileServicesDropdownOpen] = useState(false);
-  const [isMobileRessourcesDropdownOpen, setIsMobileRessourcesDropdownOpen] = useState(false);
-
-  const closeAllMobileDropdowns = () => {
-    setIsMobileAboutDropdownOpen(false);
-    setIsMobileServicesDropdownOpen(false);
-    setIsMobileRessourcesDropdownOpen(false);
-  };
+  const pathname = usePathname();
 
   const toggleMobileMenu = () => {
-    const newState = !isMobileMenuOpen;
-    setIsMobileMenuOpen(newState);
-    if (!newState) {
-      closeAllMobileDropdowns();
-    }
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const linkClass = (href, base = "text-md") =>
+    `px-3 py-2 rounded-md ${base} font-medium ${
+      pathname === href
+        ? "bg-green-800 text-white font-semibold hover:bg-gray-200 hover:text-green-800"
+        : "text-gray-900 hover:bg-gray-100"
+    }`;
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="relative flex items-center justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
+        <div className="relative flex items-center justify-between">
+          <div className="flex-shrink-0 flex items-center gap-2">
             <Image
-              className="block h-8 w-auto"
-              src="/logo.png"
+              className="block h-auto w-20"
+              src="/logo_venture.png"
               alt="Logo K-venture"
-              width={32}
-              height={32}
+              width={500}
+              height={500}
             />
-          </div>
-          {/* Desktop Menu - visible sur sm et plus grands écrans */}
-          <div className="hidden sm:block sm:ml-6">
-            <div className="flex space-x-4 text-[#2E7D32] ">
-              <Link href="/" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium">Accueil</Link>
-
-              {/* A propos Desktop Dropdown */}
-              <div className="relative group">
-                <Link href="/a-propos" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
-                  A propos
-                </Link>
-              </div>
-
-              {/* Services Desktop Dropdown */}
-              <div className="relative group">
-                <Link href="/services" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
-                  Services
-                </Link>
-              </div>
-
-              {/* Ressources Desktop Dropdown */}
-              <div className="relative group">
-                <Link href="/ressources" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center">
-                  Ressources
-                </Link>
-              </div>
-
-              <Link href="/contact" className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium">Contact</Link>
-            </div>
+            <h1 className="text-gray-900 text-md font-medium">K-VENTURE</h1>
           </div>
 
-          {/* Mobile menu button - visible sur les petits écrans (jusqu'à sm-max) */}
-          <div className="sm:hidden">
+          {/* Desktop Menu */}
+          <div className="hidden md:flex gap-4 items-center text-[#2E7D32]">
+            <Link href="/" className={linkClass("/")}>Accueil</Link>
+            <Link href="/a-propos" className={linkClass("/a-propos")}>A propos</Link>
+            <Link href="/services" className={linkClass("/services")}>Services</Link>
+            <Link href="/ressources" className={linkClass("/ressources")}>Ressources</Link>
+            <Link href="/contact" className={linkClass("/contact")}>Contact</Link>
+          </div>
+
+          {/* Mobile menu toggle button */}
+          <div className="md:hidden">
             <button
               type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -77,11 +54,23 @@ const Navbar = () => {
             >
               <span className="sr-only">Open main menu</span>
               {!isMobileMenuOpen ? (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <svg
+                  className="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               ) : (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <svg
+                  className="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               )}
@@ -90,43 +79,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu content - show/hide based on menu state */}
-      <div className={`sm:hidden ${isMobileMenuOpen ? '' : 'hidden'}`} id="mobile-menu">
+      {/* Mobile Menu */}
+      <div className={`md:hidden ${isMobileMenuOpen ? "" : "hidden"}`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <Link href="/" className="bg-gray-100 text-gray-900 block px-3 py-2 rounded-md text-md font-medium">Accueil</Link>
-
-          {/* Mobile "A propos" Dropdown */}
-          <div className="relative">
-            <Link href="/a-propos"
-              className="w-full text-left text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-md font-medium flex items-center justify-between"
-              onClick={() => setIsMobileAboutDropdownOpen(!isMobileAboutDropdownOpen)}
-            >
-              A propos
-            </Link>
-          </div>
-
-          {/* Mobile "Services" Dropdown */}
-          <div className="relative">
-            <Link href="/services"
-              className="w-full text-left text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
-              onClick={() => setIsMobileServicesDropdownOpen(!isMobileServicesDropdownOpen)}
-            >
-              Services
-            </Link>
-          </div>
-
-          {/* Mobile "Ressources" Dropdown */}
-          <div className="relative">
-            <Link href="/ressources"
-              className="w-full text-left text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
-              onClick={() => setIsMobileRessourcesDropdownOpen(!isMobileRessourcesDropdownOpen)}
-            >
-              Ressources
-            </Link>
-          </div>
-
-          <Link href="/contact" className="text-gray-900 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
-
+          <Link href="/" className={linkClass("/")}>Accueil</Link>
+          <Link href="/a-propos" className={linkClass("/a-propos")}>A propos</Link>
+          <Link href="/services" className={linkClass("/services")}>Services</Link>
+          <Link href="/ressources" className={linkClass("/ressources")}>Ressources</Link>
+          <Link href="/contact" className={linkClass("/contact")}>Contact</Link>
         </div>
       </div>
     </nav>

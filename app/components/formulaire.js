@@ -32,7 +32,7 @@ export default function ContactForm() {
             id="prenom"
             name="prenom"
             required
-            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none" 
+            className="w-full p-2 rounded-md bg-white/55 text-white placeholder-gray-500 outline-none" 
           />
         </div>
 
@@ -44,7 +44,7 @@ export default function ContactForm() {
             id="nom"
             name="nom"
             required
-            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+            className="w-full p-2 rounded-md bg-white/55 text-white placeholder-gray-500 outline-none"
           />
         </div>
 
@@ -56,7 +56,7 @@ export default function ContactForm() {
             id="email"
             name="email"
             required
-            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+            className="w-full p-2 rounded-md bg-white/55 text-white placeholder-gray-500 outline-none"
           />
         </div>
 
@@ -67,7 +67,7 @@ export default function ContactForm() {
             type="tel"
             id="telephone"
             name="telephone"
-            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+            className="w-full p-2 rounded-md bg-white/55 text-white placeholder-gray-500 outline-none"
           />
         </div>
 
@@ -78,7 +78,7 @@ export default function ContactForm() {
             type="text"
             id="entreprise"
             name="entreprise"
-            className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+            className="w-full p-2 rounded-md bg-white/55 text-white placeholder-gray-500 outline-none"
           />
         </div>
 
@@ -88,7 +88,7 @@ export default function ContactForm() {
           <select
             id="service"
             name="service"
-            className="w-full p-2 rounded-md bg-white/8 text-white outline-none"
+            className="w-full p-2 rounded-md bg-white/10 text-white outline-none"
           >
             {/* Les options ont déjà bg-white et text-black */}
             <option value="" className="bg-white text-black">Sélectionnez un service</option>
@@ -111,7 +111,7 @@ export default function ContactForm() {
           id="sujet"
           name="sujet"
           required
-          className="w-full p-2 rounded-md bg-white/8 text-white placeholder-gray-500 outline-none"
+          className="w-full p-2 rounded-md bg-white/55 text-white placeholder-gray-500 outline-none"
         />
       </div>
 
@@ -123,14 +123,14 @@ export default function ContactForm() {
           name="message"
           rows="5"
           required
-          className="w-full p-2 rounded-md bg-white/7 placeholder-gray-500 outline-none resize-y"
+          className="w-full p-2 rounded-md bg-white/55 placeholder-gray-500 outline-none resize-y"
         ></textarea>
       </div>
 
       {/* Bouton d'envoi */}
       <button
         type="submit"
-        className="w-full bg-[#A3D900] text-[#1E5631] font-bold py-3 px-6 rounded-md hover:bg-[#8CC600] transition-colors duration-300"
+        className="w-full bg-white text-[#1E5631] font-bold py-3 px-6 rounded-md hover:bg-[#8CC600] transition-colors duration-300"
       >
         Envoyer le Message
       </button>
