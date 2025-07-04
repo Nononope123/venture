@@ -7,21 +7,18 @@ const com = [
   {
     title: "Coaching individuel",
     description: "Accompagnement personnalisé pour développer votre leadership et atteindre vos objectifs.",
-    color: "text-green-600",
     buttonText: "En savoir plus",
     buttonLink: "/services",
   },
   {
     title: "Transformation organisationnelle",
     description: "Accompagnement stratégique pour conduire le changement dans votre entreprise.",
-    color: "text-green-600",
     buttonText: "En savoir plus",
     buttonLink: "/services",
   },
   {
     title: "Formations en leadership",
     description: "Programmes complets pour développer les compétences de leadership de vos équipes.",
-    color: "text-green-600",
     buttonText: "En savoir plus",
     buttonLink: "/services",
   },
@@ -51,15 +48,15 @@ const Services1 = () => {
           {com.map((skill, index) => (
             <motion.div
               key={index}
-              className="bg-white p-6 rounded-2xl hover:p-5 hover:shadow-md  hover:border-1 hover:border-[#1E5631]"
+              className="bg-white hover:scale-110 transition-transform duration-300 flex flex-col justify-between items-center p-6 rounded-2xl hover:p-5 hover:shadow-md  hover:border-1 hover:border-[#1E5631]"
               initial="hidden"
               whileInView="visible" 
               viewport={{ once: true, amount: 0.8 }} 
               transition={{ delay: index * 0.1 }} 
             >
-              <h3 className={`text-xl font-semibold flex justify-center ${skill.color} mb-2`}>{skill.title}</h3>
+              <h3 className={`text-xl font-semibold text-center text-green-600 mb-2`}>{skill.title}</h3>
               <p className="text-gray-600 mb-6 text-center">{skill.description}</p>
-              <a href={skill.buttonLink} className="mt-3 border border-1 p-2 border-[#1E5631] rounded-sm flex justify-center hover:bg-[#1E5631] hover:text-white text-[#1E5631]">{skill.buttonText}</a>
+              <a href={skill.buttonLink} className="mt-3 border-1 p-2 border-[#1E5631] rounded-sm flex justify-center bg-[#1E5631] text-white hover:bg-white hover:text-[#1E5631]">{skill.buttonText}</a>
             </motion.div>
           ))}
         </div>

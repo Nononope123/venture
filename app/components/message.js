@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion'; // Keep motion for text and button animations
 import { Icon } from "@iconify/react"; // Keep Icon for contact button
 import { Eye } from "lucide-react"; // Keep Eye for services button
+import Link from "next/link"
 
 export default function Message() {
   const textVariants = {

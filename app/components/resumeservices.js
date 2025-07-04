@@ -72,7 +72,7 @@ export function ResumeServices() {
               className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white  dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
-                <img
+                <Image
                   width={200}
                   height={200}
                   src={active.src}
@@ -216,7 +216,8 @@ const cards = [
         <p>
         Ce service se concentre sur l&apos;épanouissement personnel et professionnel à travers l&apos;acquisition de connaissances et le renforcement de compétences spécifiques.
         Il inclut souvent des ateliers, des formations et des outils pour favoriser la croissance continue et l&apos;adaptabilité.
-                </p>
+        </p>
+
       );
     },
   },
