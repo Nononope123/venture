@@ -1,13 +1,7 @@
 // app/merci/page.js
-<<<<<<< HEAD
-import Link from "next/link"
-
-=======
-
 import Link from "next/link"
 
 
->>>>>>> main
 export default function MerciPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center p-4">
