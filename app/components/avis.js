@@ -83,9 +83,9 @@ export default function Avis() {
 
     checkMobile();
 
-    window.addEventListener("resize", checkMobile);
+    window.addEventListener('resize', checkMobile);
 
-    return () => window.removeEventListener("resize", checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   return (
@@ -106,7 +106,7 @@ export default function Avis() {
                 nextEl: '.swiper-button-next-custom',
                 prevEl: '.swiper-button-prev-custom',
               }}
-              className="pb-10 px-2" // Applied px-2 here to the Swiper container directly
+              className="pb-10 px-2"
             >
               {clientReviews.map((review, index) => (
                 <SwiperSlide key={index}>

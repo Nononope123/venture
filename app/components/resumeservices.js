@@ -270,7 +270,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Axé sur la dynamique de groupe, le coaching collectif vise à optimiser la collaboration et la performance d'une équipe. 
+          Axé sur la dynamique de groupe, le coaching collectif vise à optimiser la collaboration et la performance d&apos;une équipe. 
           Il aide les membres à mieux communiquer, à résoudre les conflits et à travailler ensemble de manière plus efficace pour atteindre des objectifs communs.
         </p>
       );
