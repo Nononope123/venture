@@ -71,14 +71,14 @@ const Footer = () => {
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">À propos de nous</h2>
             <p>
-              Bienvenue à K-venture
+              Bienvenue chez K-venture
             </p>
             <div className="flex justify-center sm:justify-start space-x-4">
               {socialLinks.map((link, index) => (
                 <Link
                   key={index}
                   href={link.href}
-                  className="text-white hover:text-blue-400"
+                  className="text-white hover:text-green-800"
                 >
                   {link.icon}
                 </Link>
@@ -92,7 +92,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {aboutLinks.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="hover:text-blue-400">
+                  <Link href={link.href} className="hover:text-green-800">
                     {link.text}
                   </Link>
                 </li>

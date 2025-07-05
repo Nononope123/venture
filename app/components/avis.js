@@ -89,7 +89,7 @@ export default function Avis() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 py-16 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-white dark:bg-gray-950 py-10 px-4 sm:px-6 lg:px-8">
       <h1 className="text-4xl md:text-5xl font-extrabold text-center text-[#1E5631] dark:text-white mb-12 lg:mb-16">
         Avis de nos Clients
       </h1>
@@ -106,7 +106,7 @@ export default function Avis() {
                 nextEl: '.swiper-button-next-custom',
                 prevEl: '.swiper-button-prev-custom',
               }}
-              className="pb-10 px-2"
+              className=" px-2"
             >
               {clientReviews.map((review, index) => (
                 <SwiperSlide key={index}>
