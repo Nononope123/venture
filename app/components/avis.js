@@ -55,7 +55,7 @@ const ReviewCard = ({ review }) => {
     <div className="bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 rounded-lg p-6 shadow-md flex flex-col">
       {review.rating && renderStars(review.rating)}
       <p className="text-gray-700 dark:text-gray-300 text-base italic mb-4 flex-grow">
-        "{review.reviewText}"
+        {review.reviewText}
       </p>
       <div className="flex items-center justify-center mt-auto pt-4 border-t border-gray-100 dark:border-zinc-700 w-full">
         <div className="text-left">
