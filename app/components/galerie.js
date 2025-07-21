@@ -43,7 +43,7 @@ export default function PhotoGallery() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 max-w-6xl">
-        <h2 className="md:text-5xl sm:text-4xl font-bold text-center text-green-700 mb-12">
+        <h2 className="md:text-5xl text-4xl font-bold text-center text-green-700 mb-12">
           Notre Galerie Photo
         </h2>
 

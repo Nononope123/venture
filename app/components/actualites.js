@@ -44,7 +44,7 @@ export default function ActualitesPage() {
     <div className="py-10 bg-gray-50">
       <div className="container mx-auto px-4">
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-3">Actualités & Événements</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3">Actualités & Événements</h1>
           <p className="text-lg text-gray-600">Ne manquez pas nos prochains masterminds et sessions de lecture en ligne !</p>
         </header>
 
