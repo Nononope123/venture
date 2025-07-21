@@ -22,16 +22,6 @@ const Footer = () => {
     },
     {
       href: "#",
-      icon: (
-        <Icon className="text-xl text-black" icon="mingcute:instagram-line" />
-      ),
-    },
-    {
-      href: "#",
-      icon: <Icon className="text-xl text-black" icon="ri:youtube-fill" />,
-    },
-    {
-      href: "#",
       icon: <Icon className="text-xl text-black" icon="uil:linkedin" />,
     },
   ];
@@ -65,8 +55,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#F1F8E9] items-center">
-      <div className="container flex justify-center items-center px-5 md:py-20 mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:text-left">
+      <div className="container flex justify-center items-center px-10 md: py-10 md:py-20 mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-30 sm:text-left">
           {/* Section A propos */}
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">À propos de nous</h2>

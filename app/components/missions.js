@@ -6,7 +6,7 @@ export default function Missions() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="md:text-5xl font-bold tracking-tight text-white sm:text-4xl">Nos Missions</h2>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">Nos Missions</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             <div className="relative rounded-2xl bg-gray-50 p-8 shadow-lg">

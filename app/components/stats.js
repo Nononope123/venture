@@ -30,7 +30,7 @@ function AnimatedCounter({ from, to, duration = 2, delay = 0 }) {
             start = to;
             clearInterval(timer);
           }
-          node.textContent = start;
+          node.textContent = start.toString();
           if (start === to) {
             clearInterval(timer);
           }
@@ -43,7 +43,7 @@ function AnimatedCounter({ from, to, duration = 2, delay = 0 }) {
         clearTimeout(timeout);
       };
     }
-  }, [isInView, from, to, duration, delay, controls]);
+  }, [isInView, from, to, duration, delay]);
 
   return <span ref={nodeRef}>{from}</span>;
 }
@@ -60,15 +60,18 @@ export default function Stats() {
   };
 
   return (
-    <div className="relative w-full h-100 flex items-center justify-center overflow-hidden bg-[#388E3C] ">
+    // J'ai enlevé 'justify-between' du conteneur flex principal
+    // et j'ai ajusté la hauteur minimale
+    <div className="w-full min-h-[60vh] md:min-h-[40vh] lg:min-h-[40vh] flex flex-col items-center overflow-hidden bg-[#388E3C] py-10 px-4 sm:px-6 lg:px-8">
 
-    <div className="absolute top-20 text-white ">
-    <h3 className="text-5xl text-white font-bold mb-2 text-center">Nos réalisations</h3>
-    <p className="">Des chiffres qui témoignent de notre impact</p>
-    </div>
+      {/* Header text */}
+      <div className="flex flex-col items-center text-white text-center mb-8 sm:mb-12">
+        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">Nos réalisations</h3>
+        <p className="text-base sm:text-lg">Des chiffres qui témoignent de notre impact</p>
+      </div>
 
-      {/* Les cartes de statistiques positionnées absolument en bas de la section hero */}
-      <div className="absolute bottom-0 left-0 right-0  px-6 lg:px-8 pb-10"> {/* z-50 ici */}
+      {/* Stats cards container - Ajout d'une marge top responsive pour le rapprocher */}
+      <div className="w-full mt-8 md:mt-2 lg:mt-2">
         <motion.dl
           className="mx-auto max-w-7xl grid grid-cols-1 gap-4 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4"
           initial="hidden"
@@ -90,12 +93,12 @@ export default function Stats() {
           ].map((stat, index) => (
             <motion.div
               key={index}
-              className="flex flex-col bg-white/20 backdrop-blur-md p-6 rounded-lg text-white shadow-xl" // Légèrement transparent avec effet de flou
+              className="flex flex-col bg-white/20 backdrop-blur-md p-6 rounded-lg text-white shadow-xl"
               variants={cardVariants}
               custom={index}
             >
               <dt className="text-lg font-semibold leading-6">{stat.dt}</dt>
-              <dd className="order-first text-5xl font-semibold tracking-tight mb-2">
+              <dd className="order-first text-4xl sm:text-5xl font-semibold tracking-tight mb-2">
                 {stat.ddPrefix}
                 <AnimatedCounter
                   from={0}
