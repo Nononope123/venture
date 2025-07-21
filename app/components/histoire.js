@@ -5,7 +5,6 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { Eye } from "lucide-react";
-import Link from "next/link"
 
 
 
