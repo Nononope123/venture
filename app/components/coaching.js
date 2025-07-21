@@ -12,7 +12,7 @@ export function Coaching() {
         "Outils d'auto-évaluation",
       ],
       duration: "Durée: 3-6 mois",
-      priceType: "Sur devis", // Indicateur pour le texte du bouton
+      priceType: "Sur devis",
     },
     {
       title: "Coaching d'Équipe",
@@ -41,7 +41,7 @@ export function Coaching() {
   ];
 
   return (
-    <section className="bg-gray-100 py-16 px-4 md:px-8 lg:px-16"> {/* Conteneur global de la section */}
+    <section className="bg-white py-16 px-4 md:px-8 lg:px-16"> {/* Conteneur global de la section */}
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-green-700 mb-2">Services de Coaching</h2>
         <p className="text-gray-700 text-lg">Accompagnement personnalisé pour votre développement</p>
@@ -67,10 +67,9 @@ export function Coaching() {
 
             <div className="mt-auto flex justify-between items-center pt-4 border-t border-gray-100">
               <span className="text-gray-500 text-sm">{service.duration}</span>
-              <button className="bg-green-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 text-sm">
+              <a href="/contact" className="bg-green-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 text-sm">
                 {service.priceType === "Sur devis" ? "Sur devis" : "Demander un Devis"}
-                {/* Le libellé du bouton est ici "Sur devis" d'après votre capture, mais j'ai laissé l'option si vous voulez "Demander un Devis" pour d'autres cas */}
-              </button>
+              </a>
             </div>
           </div>
         ))}

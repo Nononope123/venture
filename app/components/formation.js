@@ -38,7 +38,7 @@ export function Formation() {
   ];
 
   return (
-    <section className="bg-gray-100 py-16 px-4 md:px-8 lg:px-16"> {/* Conteneur global de la section */}
+    <section className="bg-[#C8E6C9] py-16 px-4 md:px-8 lg:px-16"> {/* Conteneur global de la section */}
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-green-700 mb-2">Formations Professionnelles</h2>
         <p className="text-gray-700 text-lg">Programmes de formation pour développer vos compétences</p>
@@ -64,9 +64,9 @@ export function Formation() {
 
             <div className="mt-auto flex justify-between items-center pt-4 border-t border-gray-100">
               <span className="text-gray-500 text-sm">{training.duration}</span>
-              <button className="bg-green-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 text-sm">
+              <a href="/contact" className="bg-green-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 text-sm">
                 S&apos;inscrire
-              </button>
+              </a>
             </div>
           </div>
         ))}
