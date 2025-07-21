@@ -41,7 +41,7 @@ const Services1 = () => {
   return (
     <section className="bg-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-bold md:text-center text-[#1E5631] mb-3">Nos services</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-10 flex justify-center text-center text-[#2E7D32]">Nos services</h2>
         <p className="text-base sm:text-lg text-center text-gray-700 mb-10">Des solutions sur mesure adaptées à vos besoins</p>
 
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-0 sm:p-6">
