@@ -52,7 +52,7 @@ const ReviewCard = ({ review }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 rounded-lg p-6 shadow-md flex flex-col h-full">
+    <div className="bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 rounded-lg p-6 shadow-md flex flex-col">
       {review.rating && renderStars(review.rating)}
       <p className="text-gray-700 dark:text-gray-300 text-base italic mb-4 flex-grow">
         "{review.reviewText}"
@@ -89,8 +89,8 @@ export default function Avis() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-950 py-10 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center text-[#1E5631] dark:text-white mb-12 lg:mb-16">
+    <main className="bg-white dark:bg-gray-950 py-20 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-center text-[#1E5631] dark:text-white mb-12">
         Avis de nos Clients
       </h1>
 
