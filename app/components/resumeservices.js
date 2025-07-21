@@ -196,7 +196,7 @@ const cards = [
     title: "Coaching individuel",
     src: "https://www.horizonrh.ma/wp-content/uploads/2020/04/coaching_ind.jpg",
     ctaText: "En savoir plus",
-    ctaLink: "/contact",
+    ctaLink: "@/coaching/coaching-individuel",
     content: () => {
       return (
         <p>
@@ -210,7 +210,7 @@ const cards = [
     title: "Développement individuel",
     src: "https://f.maformation.fr/edito/sites/3/2021/10/developpement-personnel.jpeg",
     ctaText: "En savoir plus",
-    ctaLink: "/contact",
+    ctaLink: "@/coaching/coaching-individuel",
     content: () => {
       return (
         <p>
@@ -226,7 +226,7 @@ const cards = [
     title: "Formation des équipes",
     src: "https://evolutis-formation.fr/wp-content/uploads/2022/03/Formation-reussir-la-cohesion-dequipe.jpg",
     ctaText: "En savoir plus",
-    ctaLink: "/contact",
+    ctaLink: "@/coaching/coaching-individuel",
     content: () => {
       return (
         <p>
@@ -240,7 +240,7 @@ const cards = [
     title: "Transformation organisationnelle",
     src: "https://abylon-conseil.com/wp-content/uploads/2023/06/image.jpg",
     ctaText: "En savoir plus",
-    ctaLink:"/contact",
+    ctaLink:"@/coaching/coaching-individuel",
     content: () => {
       return (
         <p>
@@ -254,7 +254,7 @@ const cards = [
     title: "Coaching stratégique",
     src: "https://www.bayonne.cci.fr/sites/g/files/mwbcuj1516/files/2021-07/Innover-grace-au-coaching-strategique-ADN-cci-bayonne-pays-basque.jpg",
     ctaText: "En savoir plus",
-    ctaLink: "/contact",
+    ctaLink: "@/coaching/coaching-individuel",
     content: () => {
       return (
         <p>
@@ -268,7 +268,7 @@ const cards = [
     title: "Coaching collectif",
     src: "https://whyness.ch/wp-content/uploads/2022/07/entreprises-domaines-competences-1024x624.jpg",
     ctaText: "En savoir plus",
-    ctaLink: "/contact",
+    ctaLink: "@/coaching/coaching-individuel",
     content: () => {
       return (
         <p>

@@ -47,14 +47,14 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Link
-                href="/contact"
+                href="mailto:info@ecmac-gabon.org"
                 className="px-6 py-3 flex justify-center items-center gap-2 text-[#419b60] bg-white hover:bg-white/90 rounded-md shadow-lg transition-colors duration-300 font-semibold"
               >
                 <Icon className="text-xl" icon="line-md:email-twotone" />
                 Nous contacter
               </Link>
               <Link
-                href="/services"
+                href="/nos-services"
                 className="px-6 flex justify-center items-center gap-2 py-3 text-white bg-[#2E7D32] hover:bg-[#1E5631] rounded-md shadow-lg transition-colors duration-300 font-semibold"
               >
                 <Eye className="w-4 h-4 mr-1" />

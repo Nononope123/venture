@@ -12,7 +12,7 @@ export default function ActualitesPage() {
       bookTitle: "LES DAMNÉS DE LA RENTE",
       authorName: "Gabriel NTOUGOU",
       imageUrl: "/atelier1.jpg",
-      link: "/contact",
+      link: "https://bit.ly/coachsylvereboussamba",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export default function ActualitesPage() {
       bookTitle: "INVESTIR AU GABON",
       authorName: "Hélène ZOUA-ONDO",
       imageUrl: "/atelier2.jpg",
-      link: "/contact",
+      link: "https://bit.ly/coachsylvereboussamba",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export default function ActualitesPage() {
       bookTitle: "POURQUOI LE GABON NE DECOLLE PAS",
       authorName: "Sylvère BOUSSAMBA",
       imageUrl: "/atelier3.jpg",
-      link: "/contact",
+      link: "https://bit.ly/coachsylvereboussamba",
     },
   ];
 
